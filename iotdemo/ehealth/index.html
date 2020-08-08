@@ -1,0 +1,843 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Keyno Guidance & Control</title>
+<meta name="generator" content=" ">
+<style type="text/css">
+body
+{
+   background-color: #000000;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+a
+{
+   color: #DCDCDC;
+   text-decoration: underline;
+}
+a:visited
+{
+   color: #FF8C00;
+}
+a:active
+{
+   color: #FF0000;
+}
+a:hover
+{
+   color: #7CFC00;
+   text-decoration: underline;
+}
+#Shape1
+{
+   width: 714px;
+   height: 160px;
+   background-color: #F0F0F0;
+   background: -moz-radial-gradient(75% 50%,circle,#57FFC0 0%,#1016A6 18%,#1016A6 45%,#000000 100%);
+   background: -webkit-radial-gradient(75% 50%,circle,#57FFC0 0%,#1016A6 18%,#1016A6 45%,#000000 100%);
+   background: -o-radial-gradient(75% 50%,circle,#57FFC0 0%,#1016A6 18%,#1016A6 45%,#000000 100%);
+   background: -ms-radial-gradient(75% 50%,circle,#57FFC0 0%,#1016A6 18%,#1016A6 45%,#000000 100%);
+   background: radial-gradient(75% 50%,circle,#57FFC0 0%,#1016A6 18%,#1016A6 45%,#000000 100%);
+   border: 0px #A0A0A0 solid;
+   -moz-border-radius: 15px;
+   -webkit-border-radius: 15px;
+   border-radius: 15px;
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   -ms-border-radius: 15px;
+   border-radius: 15px;
+}
+#Shape1_text
+{
+   position: absolute;
+   left: 8px;
+   top: 72px;
+   width: 697px;
+   height: 79px;
+   overflow: hidden;
+   text-align: center;
+}
+#wb_addres 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_addres div
+{
+   text-align: right;
+}
+#wb_Textiot 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Textiot div
+{
+   text-align: left;
+}
+#wb_Tekgc 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Tekgc div
+{
+   text-align: center;
+}
+#wb_Twww 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Twww div
+{
+   text-align: left;
+}
+#wb_Tauto 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Tauto div
+{
+   text-align: center;
+}
+#wb_Text4iot 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text4iot div
+{
+   text-align: left;
+}
+#Layer1
+{
+   background-color: #0000FF;
+   background: -moz-linear-gradient(left,#000000 0%,#1016A6 27%,#1016A6 40%,#57FFC0 50%,#57FFC0 50%,#1016A6 59%,#1016A6 73%,#000000 100%);
+   background: -webkit-linear-gradient(left,#000000 0%,#1016A6 27%,#1016A6 40%,#57FFC0 50%,#57FFC0 50%,#1016A6 59%,#1016A6 73%,#000000 100%);
+   background: -o-linear-gradient(left,#000000 0%,#1016A6 27%,#1016A6 40%,#57FFC0 50%,#57FFC0 50%,#1016A6 59%,#1016A6 73%,#000000 100%);
+   background: -ms-linear-gradient(left,#000000 0%,#1016A6 27%,#1016A6 40%,#57FFC0 50%,#57FFC0 50%,#1016A6 59%,#1016A6 73%,#000000 100%);
+   background: linear-gradient(left,#000000 0%,#1016A6 27%,#1016A6 40%,#57FFC0 50%,#57FFC0 50%,#1016A6 59%,#1016A6 73%,#000000 100%);
+}
+#wb_Tconpy 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Tconpy div
+{
+   text-align: center;
+}
+#_link
+{
+   border: 0px #A9A9A9 solid;
+   -moz-border-radius: 50px;
+   -webkit-border-radius: 50px;
+   border-radius: 50px;
+   background-color: #00008B;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#current_data
+{
+   border: 0px #FFFFFF solid;
+   background-color: transparent;
+   color :#FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 15px;
+   text-align: center;
+   vertical-align: middle;
+}
+#wb_CssMenu4
+{
+   border: 0px #0000CD solid;
+   background-color: transparent;
+}
+#wb_CssMenu4 ul
+{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+#wb_CssMenu4 li
+{
+   float: left;
+   margin: 0;
+   padding: 0px 1px 0px 0px;
+   width: 100px;
+}
+#wb_CssMenu4 a
+{
+   display: block;
+   float: left;
+   color: #000000;
+   border: 0px #D0F0EF solid;
+   background-color: #FFCC00;
+   background: -moz-linear-gradient(top,#FFCC00 0%,#FF6600 100%);
+   background: -webkit-linear-gradient(top,#FFCC00 0%,#FF6600 100%);
+   background: -o-linear-gradient(top,#FFCC00 0%,#FF6600 100%);
+   background: -ms-linear-gradient(top,#FFCC00 0%,#FF6600 100%);
+   background: linear-gradient(top,#FFCC00 0%,#FF6600 100%);
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 15px;
+   font-style: normal;
+   text-decoration: none;
+   width: 90px;
+   height: 30px;
+   padding: 0px 5px 0px 5px;
+   vertical-align: middle;
+   line-height: 30px;
+   text-align: center;
+}
+#wb_CssMenu4 li:hover a, #wb_CssMenu4 a:hover
+{
+   color: #FFFFFF;
+   background-color: #002840;
+   background: -moz-linear-gradient(top,#002840 0%,#002840 18%,#4ECAFD 50%,#002840 81%,#002840 100%);
+   background: -webkit-linear-gradient(top,#002840 0%,#002840 18%,#4ECAFD 50%,#002840 81%,#002840 100%);
+   background: -o-linear-gradient(top,#002840 0%,#002840 18%,#4ECAFD 50%,#002840 81%,#002840 100%);
+   background: -ms-linear-gradient(top,#002840 0%,#002840 18%,#4ECAFD 50%,#002840 81%,#002840 100%);
+   background: linear-gradient(top,#002840 0%,#002840 18%,#4ECAFD 50%,#002840 81%,#002840 100%);
+   border: 0px #145F74 solid;
+}
+#wb_CssMenu4 li.firstmain
+{
+   padding-left: 0px;
+}
+#wb_CssMenu4 li.lastmain
+{
+   padding-right: 0px;
+}
+#wb_CssMenu4 br
+{
+   clear: both;
+   font-size: 1px;
+   height: 0;
+   line-height: 0;
+}
+#wb_Text1 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text1 div
+{
+   text-align: left;
+}
+</style>
+<link href="Stand_css.css" rel="stylesheet" type="text/css">
+<script src="Stand.js"></script>
+<script src="sm.js"></script>
+<script type="text/javascript">      
+window.onload = function () 
+{
+ Wave('logo.png','flag',8,200);         
+  setTimeout(ini_ws,1000);
+setTimeout( lunch_chart(), 1500);
+//setTimeout( lunch_powerchart(), 2000);
+ show_tab("_status");
+ }
+         
+      
+var tab_list=["_status","_setting","_wifi","_about"]
+ function show_tab(id) 
+{
+      	for(i=0;i<tab_list.length;i++) 
+      	{
+      		 
+      	    if(id==tab_list[i]) document.getElementById(tab_list[i]).style.display = 'block';
+      	    else                document.getElementById(tab_list[i]).style.display = 'none';
+      	} 
+ }
+      
+   
+     
+      
+</script>
+</head>
+<body>
+<div id="wb_Shape1" style="position:absolute;left:247px;top:30px;width:714px;height:160px;z-index:1;">
+<div id="Shape1"></div></div>
+<!-- flag -->
+<div id="flag_html" style="position:absolute;left:177px;top:119px;width:70px;height:71px;z-index:2">
+ <canvas id="flag"></canvas></div></div>
+<div id="wb_addres" style="position:absolute;left:431px;top:5px;width:497px;height:32px;text-align:right;z-index:3;">
+<span style="color:#FFFFFF;font-family:Arial;font-size:13px;"><strong>تهران - بزگ راه نواب - پاساژ دندانپزکی&nbsp; -&nbsp; ساختمان ابریشم واحد 6-31 .شرکت کی نو هدایت و کنترل&nbsp; <br>تلغن&nbsp;&nbsp;&nbsp;&nbsp; 02166676489&nbsp;&nbsp; &nbsp;&nbsp; همراه :&nbsp; 09127163464</strong></span></div>
+<div id="wb_Textiot" style="position:absolute;left:161px;top:5px;width:238px;height:38px;z-index:4;text-align:left;">
+<span style="color:#FFFFFF;font-family:'Times New Roman';font-size:17px;"><strong> Internet Of Things </strong></span><span style="color:#0000FF;font-family:'Times New Roman';font-size:17px;"><strong>smart portal</strong></span></div>
+<div id="wb_Tekgc" style="position:absolute;left:295px;top:62px;width:292px;height:24px;text-align:center;z-index:5;">
+<span style="color:#FF8C00;font-family:'Times New Roman';font-size:21px;"><strong>Keyno Guidance &amp; Control</strong></span></div>
+<div id="wb_Twww" style="position:absolute;left:366px;top:111px;width:187px;height:16px;z-index:6;text-align:left;">
+<span style="color:#000000;font-family:Arial;font-size:13px;"><a href="http://www.Keyno-GC.com" target="_blank">www.Keyno-GC.com</a></span></div>
+<div id="wb_Tauto" style="position:absolute;left:599px;top:64px;width:269px;height:38px;text-align:center;z-index:7;">
+<span style="color:#F5F5F5;font-family:Arial;font-size:16px;"><strong>سامانه اتوماسیون&nbsp; هوشمند خانگی و صنعتی<br>&nbsp;&nbsp;&nbsp;&nbsp; با استفاده از تکنولوژی</strong></span></div>
+<div id="wb_Text4iot" style="position:absolute;left:663px;top:110px;width:178px;height:17px;z-index:8;text-align:left;">
+<span style="color:#F0F8FF;font-family:'Times New Roman';font-size:15px;"><strong>Internet Of Things IOT </strong></span></div>
+<div id="Layer1" style="position:fixed;text-align:center;left:0;right:0;bottom:0;height:55px;z-index:9;">
+<div id="Layer1_Container" style="width:987px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+<div id="wb_Tconpy" style="position:absolute;left:15px;top:23px;width:632px;height:15px;text-align:center;z-index:0;">
+<span style="color:#FFE4E1;font-family:Arial;font-size:12px;">Copyright © 2016 by &quot;Keyno Guidance &amp; Control&quot;&nbsp; ·&nbsp; All Rights reserved&nbsp; ·&nbsp; E-Mail: Q@Keyno-GC.com</span></div>
+</div>
+</div>
+<!-- status -->
+<div id="_status" style="position:absolute;left:125px;top:207px;width:122px;height:72px;z-index:10">
+<input type="text" id="wifimode" style="position:absolute;left:231px;top:50px;width:162px;height:27px;line-height:27px;z-index:0;" name="Editbox1" value="---" readonly class="My_TX">
+<input type="text" id="localip" style="position:absolute;left:231px;top:128px;width:162px;height:27px;line-height:27px;z-index:1;" name="Editbox1" value="---" readonly class="My_TX">
+<input type="text" id="serverip" style="position:absolute;left:231px;top:167px;width:162px;height:27px;line-height:27px;z-index:2;" name="Editbox1" value="---" readonly class="My_TX">
+<input type="text" id="hostID" style="position:absolute;left:231px;top:89px;width:162px;height:27px;line-height:27px;z-index:3;" name="Editbox1" value="---" readonly class="My_TX">
+<input type="text" id="AP_name" style="position:absolute;left:761px;top:89px;width:162px;height:27px;line-height:27px;z-index:4;" name="Editbox1" value="---" readonly class="My_TX">
+<input type="button" id="Budcxvxtton1" onclick="request_status();return false;" name="" value="بروز رسانی" style="position:absolute;left:82px;top:10px;width:92px;height:25px;z-index:5;">
+<input type="text" id="_SSID" style="position:absolute;left:761px;top:50px;width:162px;height:27px;line-height:27px;z-index:6;" name="Editbox1" value="---" readonly class="My_TX">
+<div id="chart" style="position:absolute;left:322px;top:247px;width:640px;height:180px;z-index:7">
+ <canvas id="mycanvas"  width="630px" height="180px" style="left:450px;top:185px;"></canvas></div>
+<input type="text" id="license" style="position:absolute;left:761px;top:169px;width:162px;height:27px;line-height:27px;z-index:8;" name="Editbox1" value="---" readonly class="My_TX">
+<input type="text" id="software" style="position:absolute;left:761px;top:128px;width:162px;height:27px;line-height:27px;z-index:9;" name="Editbox1" value="---" readonly class="My_TX">
+<div id="wb_Text3" style="position:absolute;left:88px;top:58px;width:130px;height:18px;text-align:right;z-index:10;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">نوع اتصال شبکه</span></div>
+<div id="wb_Text4" style="position:absolute;left:88px;top:97px;width:130px;height:18px;text-align:right;z-index:11;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">نام تجهيز در شبکه</span></div>
+<div id="wb_Text5" style="position:absolute;left:88px;top:136px;width:130px;height:18px;text-align:right;z-index:12;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">&nbsp;&nbsp; تجهيز در شبکه IP </span></div>
+<div id="wb_Text6" style="position:absolute;left:88px;top:175px;width:130px;height:18px;text-align:right;z-index:13;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">&nbsp;&nbsp; سرور شبکه IP </span></div>
+<div id="wb_Text7" style="position:absolute;left:623px;top:58px;width:130px;height:18px;text-align:right;z-index:14;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">&nbsp;&nbsp; سرور شبکه SSID </span></div>
+<div id="wb_Text9" style="position:absolute;left:586px;top:97px;width:167px;height:18px;text-align:right;z-index:15;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">نام اکسس پينت تجهيز </span></div>
+<div id="wb_Text8" style="position:absolute;left:623px;top:136px;width:130px;height:18px;text-align:right;z-index:16;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">ويرايش نرم افزار</span></div>
+<div id="wb_Text10" style="position:absolute;left:623px;top:177px;width:130px;height:18px;text-align:right;z-index:17;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">مالک لايسنس</span></div>
+<div id="wb_Text11" style="position:absolute;left:446px;top:10px;width:130px;height:18px;text-align:right;z-index:18;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;"><strong>وضعيت شبکه</strong></span></div>
+<div id="wb_Text12" style="position:absolute;left:414px;top:211px;width:130px;height:36px;text-align:right;z-index:19;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;"><strong>وضعيت سنسورها</strong></span></div>
+<input type="text" id="Editbox1" style="position:absolute;left:242px;top:247px;width:56px;height:25px;line-height:25px;z-index:20;" name="Editbox1" value="10/24" readonly class="My_TX">
+<input type="text" id="Editbox2" style="position:absolute;left:242px;top:292px;width:56px;height:25px;line-height:25px;z-index:21;" name="Editbox1" value="75" readonly class="My_TX">
+<input type="text" id="Editbox3" style="position:absolute;left:242px;top:337px;width:56px;height:25px;line-height:25px;z-index:22;" name="Editbox1" value="75" readonly class="My_TX">
+<input type="text" id="Editbox4" style="position:absolute;left:242px;top:383px;width:56px;height:25px;line-height:25px;z-index:23;" name="Editbox1" value="27" readonly class="My_TX">
+<div id="wb_Text1" style="position:absolute;left:174px;top:247px;width:45px;height:18px;text-align:right;z-index:24;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">فشار</span></div>
+<div id="wb_Text2" style="position:absolute;left:141px;top:295px;width:78px;height:18px;text-align:right;z-index:25;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">ضربان قلب</span></div>
+<div id="wb_Text13" style="position:absolute;left:174px;top:343px;width:45px;height:18px;text-align:right;z-index:26;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">نبض</span></div>
+<div id="wb_Text14" style="position:absolute;left:174px;top:392px;width:45px;height:18px;text-align:right;z-index:27;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">دما</span></div>
+<div id="wb_Image1" style="position:absolute;left:19px;top:275px;width:48px;height:44px;z-index:28;">
+<img src="./images/heart.png" id="Image1" alt=""></div>
+<div id="wb_Image2" style="position:absolute;left:97px;top:320px;width:62px;height:44px;z-index:29;">
+<img src="./images/pulse%20%282%29.png" id="Image2" alt=""></div>
+<div id="wb_Image3" style="position:absolute;left:46px;top:343px;width:21px;height:84px;z-index:30;">
+<img src="./images/termo.png" id="Image3" alt=""></div>
+<div id="wb_Image4" style="position:absolute;left:35px;top:226px;width:51px;height:49px;z-index:31;">
+<img src="./images/pre.png" id="Image4" alt=""></div></div>
+<!-- wifi -->
+<div id="_wifi" style="position:absolute;left:211px;top:207px;width:122px;height:72px;z-index:11">
+<div id="wb_Text21" style="position:absolute;left:56px;top:46px;width:122px;height:19px;text-align:right;z-index:0;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:16px;">عملکرد واي فاي </span></div>
+<select name="Combobox1" size="1" id="WFM" style="position:absolute;left:190px;top:44px;width:117px;height:26px;z-index:1;" class="My_TX">
+<option value="Access Point">وای فای مستقل</option>
+<option selected value="Station">اتصال به وای فای</option>
+</select>
+<div id="wb_Texnbvmbnt1" style="position:absolute;left:15px;top:164px;width:174px;height:19px;z-index:2;text-align:left;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:16px;">تعيين نام تجهيز در شبکه </span></div>
+<div id="wb_Tenbnxt2" style="position:absolute;left:69px;top:85px;width:109px;height:18px;text-align:right;z-index:3;">
+<span style="color:#FFEBCD;font-family:Arial;font-size:16px;">Set Server IP</span></div>
+<input type="text" id="SIP" onchange="CheckIP(this);return false;" style="position:absolute;left:189px;top:84px;width:114px;height:24px;line-height:24px;z-index:4;" name="Editbox1" value="192.168.---.---." class="My_TX">
+<input type="text" id="SHN" style="position:absolute;left:189px;top:167px;width:114px;height:23px;line-height:23px;z-index:5;" name="Editbox1" value="MyIOT" class="My_TX">
+<input type="button" id="Button134" onclick="Update_Wifi(WFM);return false;" name="" value="Set" style="position:absolute;left:317px;top:44px;width:45px;height:25px;z-index:6;" class="My_BT"><script>
+ function Update_Wifi(_ID)
+ {
+   var command  =_ID.id +'='+_ID.value ;
+   
+   _Connection.send(command);
+}
+</script>
+<input type="button" id="Button3hsddf" onclick="Update_Wifi(SIP);return false;" name="" value="Set" style="position:absolute;left:316px;top:85px;width:45px;height:25px;z-index:7;" class="My_BT">
+<input type="button" id="Button4dfgh" onclick="Update_Wifi(SHN);return false;" name="" value="Set" style="position:absolute;left:316px;top:167px;width:45px;height:25px;z-index:8;"  class="My_BT">
+<input type="button" id="Breset" onclick="Restart();return false;" name="" value="Restart" style="position:absolute;left:474px;top:246px;width:79px;height:25px;z-index:9;" class="My_BT"><script>
+ function Restart()
+{ 
+   var command  = "RRE"; 
+   _Connection.send(command);
+}
+</script>
+<div id="wb_Textghn3" style="position:absolute;left:411px;top:50px;width:106px;height:19px;z-index:10;text-align:left;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:16px;">تعيين نام کابر</span></div>
+<div id="wb_Texkkt4" style="position:absolute;left:409px;top:88px;width:121px;height:19px;z-index:11;text-align:left;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:16px;">تعيين رمز کاربر</span></div>
+<input type="text" id="_username" style="position:absolute;left:511px;top:45px;width:93px;height:21px;line-height:21px;z-index:12;" name="Editbox1" value="" class="My_TX">
+<input type="password" id="_password" style="position:absolute;left:511px;top:86px;width:93px;height:21px;line-height:21px;z-index:13;" name="Editbox1" value="" class="My_TX">
+<div id="wb_Text5aaa" style="position:absolute;left:380px;top:128px;width:124px;height:19px;z-index:14;text-align:left;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:16px;">سطح دسترسي</span></div>
+<select name="Combobox1" size="1" id="_userType" style="position:absolute;left:511px;top:122px;width:95px;height:25px;z-index:15;" class="My_TX">
+<option selected value="Admin">Admin</option>
+<option value="Limit">Limit</option>
+</select>
+<input type="button" id="Butcghton6" onclick="AddUser();return false;" name="" value="اضافه نمودن کاربر" style="position:absolute;left:616px;top:84px;width:105px;height:25px;z-index:16;" class="My_BT">
+<input type="button" id="Buh7" onclick="RemoveUser();return false;" name="" value="حدف کاربر" style="position:absolute;left:616px;top:123px;width:105px;height:25px;z-index:17;" class="My_BT">
+<!-- user list -->
+<div id="userlist" style="position:absolute;left:729px;top:43px;width:124px;height:69px;z-index:18">
+</div>
+<input type="button" id="Button8" onclick="show_user_list();return false;" name="" value="بارگزاری کاربرها" style="position:absolute;left:616px;top:43px;width:105px;height:25px;z-index:19;" class="My_BT">
+<input type="text" id="_ssid" style="position:absolute;left:189px;top:287px;width:114px;height:23px;line-height:23px;z-index:20;" name="Editbox1" value="" class="My_TX">
+<div id="wb_Text7765" style="position:absolute;left:30px;top:287px;width:148px;height:19px;text-align:right;z-index:21;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:16px;">انتخاي واي واي مودم</span></div>
+<div id="wb_Textokhj8" style="position:absolute;left:30px;top:328px;width:148px;height:19px;text-align:right;z-index:22;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:16px;">رمز واي واي مودم</span></div>
+<input type="text" id="_netpass" style="position:absolute;left:189px;top:328px;width:114px;height:23px;line-height:23px;z-index:23;" name="Editbox1" value="" class="My_TX">
+<input type="button" id="Bugdfgtton9" onclick="SetNetwork();return false;" name="" value="Set" style="position:absolute;left:316px;top:288px;width:45px;height:25px;z-index:24;"  class="My_BT">
+<input type="button" id="Button10" onclick="ScanNetwork();return false;" name="" value="جستجوی شبکه وای فای" style="position:absolute;left:538px;top:280px;width:175px;height:26px;z-index:25;" class="My_BT">
+<!-- network scan -->
+<div id="netScanResult" style="position:absolute;left:729px;top:280px;width:106px;height:91px;z-index:26">
+</div>
+<div id="wb_Text9jhnbvc" style="position:absolute;left:347px;top:339px;width:39px;height:18px;z-index:27;text-align:left;">
+<span style="color:#FFFFFF;font-family:Arial;font-size:16px;">Hide</span></div>
+<input type="checkbox" id="_hidecheck" name="_hidecheck" value="on" style="position:absolute;left:317px;top:333px;z-index:28;"  onchange="document.getElementById('_netpass').type = this.checked ? 'password' : 'text'">
+<div id="wb_Tezzxt10" style="position:absolute;left:40px;top:205px;width:138px;height:19px;text-align:right;z-index:29;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:16px;">تعيين نام واي فاي </span></div>
+<div id="wb_Text11" style="position:absolute;left:40px;top:246px;width:138px;height:19px;text-align:right;z-index:30;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:16px;">تعيين رمز واي فاي</span></div>
+<input type="button" id="Button11hdf" onclick="Update_Wifi(APN);return false;" name="" value="Set" style="position:absolute;left:316px;top:208px;width:45px;height:25px;z-index:31;" class="My_BT">
+<input type="text" id="APN" style="position:absolute;left:189px;top:208px;width:114px;height:20px;line-height:20px;z-index:32;" name="Editbox1" value="My Network" class="My_TX">
+<input type="text" id="APP" style="position:absolute;left:189px;top:246px;width:114px;height:23px;line-height:23px;z-index:33;" name="Editbox1" value="****" class="My_TX">
+<input type="button" id="Bufdtton12" onclick="Update_Wifi(APP);return false;" name="" value="Set" style="position:absolute;left:316px;top:249px;width:45px;height:25px;z-index:34;" class="My_BT">
+<div id="wb_Texjdsfgt2" style="position:absolute;left:87px;top:126px;width:91px;height:18px;text-align:right;z-index:35;">
+<span style="color:#FFEBCD;font-family:Arial;font-size:16px;">Set Static IP</span></div>
+<input type="text" id="STI" onchange="CheckIP(this);return false;" style="position:absolute;left:190px;top:126px;width:114px;height:23px;line-height:23px;z-index:36;" name="Editbox1" value="192.168.---.---." class="My_TX">
+<input type="button" id="Bstatic" onclick="Update_Wifi(STI);return false;" name="" value="Set" style="position:absolute;left:317px;top:126px;width:45px;height:25px;z-index:37;" class="My_BT" >
+<input type="button" id="Bmode" onclick="Update_Wifi(MOD);return false;" name="" value="Set" style="position:absolute;left:676px;top:164px;width:45px;height:25px;z-index:38;" class="My_BT">
+<div id="wb_Text1" style="position:absolute;left:407px;top:165px;width:154px;height:19px;text-align:right;z-index:39;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:16px;">تنظيم فعاليت تجهيز</span></div>
+<select name="Combobox1" size="1" id="MOD" style="position:absolute;left:569px;top:165px;width:97px;height:25px;z-index:40;" class="My_TX">
+<option selected value="S">مستقل</option>
+<option value="N">مدیریت شبکه</option>
+</select>
+<input type="checkbox" id="staticCheck" name="_hidecheck" value="on" style="position:absolute;left:56px;top:123px;z-index:41;"  onchange="enable_static_IP(this.checked);return false;">
+<script>
+function enable_static_IP(checked)
+{
+	if(checked) command  = "ESI="+"1";
+	else        command  = "ESI="+"0";
+
+	_Connection.send(command);
+}
+</script>
+<input type="button" id="RESTART" onclick="RestartHTML();return false;" name="" value="Restart" style="position:absolute;left:556px;top:246px;width:76px;height:25px;z-index:42;" class="My_BT"><script>
+ function Restart()
+{ 
+   var command  = "RRE"; 
+   _Connection.send(command);
+}
+</script>
+<input type="button" id="savesetting" onclick=" save_setting();return false;" name="" value="ذخیره تنظیمات" style="position:absolute;left:376px;top:246px;width:96px;height:25px;z-index:43;" class="My_BT"><script>
+ function save_setting()
+{ 
+   var command  = "SVE"; 
+   _Connection.send(command);
+}
+</script>
+<input type="button" id="Butdsston1" onclick="Update_perform();return false;" name="" value="بروز رسانی نرم افزار" style="position:absolute;left:635px;top:246px;width:124px;height:25px;z-index:44;" class="My_BT"><script>
+ function Restart()
+{ 
+   var command  = "RRE"; 
+   _Connection.send(command);
+}
+</script>
+<input type="button" id="Button2" name="" value="دانلود" style="position:absolute;left:676px;top:205px;width:45px;height:25px;z-index:45;" class="My_BT">
+<div id="wb_Text3" style="position:absolute;left:414px;top:205px;width:218px;height:19px;text-align:right;z-index:46;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:16px;">دانلود داده هاي عملکردي تجهيز</span></div>
+<div id="wb_Text14" style="position:absolute;left:510px;top:6px;width:211px;height:18px;text-align:right;z-index:47;">
+<span style="color:#FFD700;font-family:Tahoma;font-size:15px;"><strong> تنظيمات عمومي </strong></span></div>
+<div id="wb_Text2" style="position:absolute;left:511px;top:371px;width:211px;height:18px;text-align:right;z-index:48;">
+<span style="color:#FFD700;font-family:Tahoma;font-size:15px;"><strong> تنظيمات پيشرفته </strong></span></div>
+<div id="wb_Text4" style="position:absolute;left:69px;top:397px;width:39px;height:23px;z-index:49;text-align:left;">
+<span style="color:#FFFFFF;font-family:'Arial Black';font-size:16px;">&#0063;</span></div></div>
+<!-- about -->
+<div id="_about" style="position:absolute;left:70px;top:207px;width:122px;height:72px;z-index:12">
+<div id="wb_ghsdfgg" style="position:absolute;left:145px;top:28px;width:775px;height:108px;text-align:right;z-index:0;">
+<span style="color:#FFE4E1;font-family:Arial;font-size:16px;"> امروزه فن آوری عصر اطلاعات یا همان شبکه&nbsp; گستره بین سرورها و کامپیوتر ها که تحت نام اینترنت گسترش یافته دیگر محدود&nbsp; به دادهای مجازی داخل رایانه ها نیست بلکه با نفوذ به اشیای اطراف ما ،&nbsp; انها را نیز به سیطره خود افزوده است. این فن آوری که به&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; یا اینترنت اشیاه معروف است با سرعت فزاینده ای در حال توسعه به تمام صنایع مختلف می باشد به طوری که هم اکنون تعداد وسیله ها و ماشین های متصل به اینترنت بیشتر از تعداد رایانه ها ، تبلت ها ، گوشی های هوشمند و لوازم اداری می باشد و این بدلیل قدرت توصعه پذیری این فن آوری همراه با ارایه روش های کاملا اقتصادی می باشد ، به طوری که پیش بینی می شود تا سال 2020 میزان سرمایه گزاری در این صنعت به بیش از 23 تریلیون دلار می رسد </span></div>
+<div id="wb_sg" style="position:absolute;left:147px;top:160px;width:775px;height:90px;text-align:right;z-index:1;">
+<span style="color:#FFE4E1;font-family:Arial;font-size:16px;">در این فن آوری&nbsp; هر یک از لوازم و ماشین ها تبدیل به یک وب سرور مستقل خواهد شد که در قالب پروتکل جهانی اینترنت&nbsp; قادر به ارایه سرویس مورد نیاز نظیر اعلام وضعیت ماشین و اجرای فرمان های کنترلی ماشین&nbsp; در محدوده یک شبکه محلی یا شبکه اینترنت خواهند بود . به عبارت دیگر هر شی می تواند توسط ماژول های این فن آوری هم به یک کامپیوتر کوچک تبدیل شود که قابلیت خواندن و پردازش اطلاعات سنسور ها است و هم از سوی دیگر قادر به نشر این اطلاعات بمانند یک وب سرور کوچک بر روی پروتکل اینترنت می باشد . به همان سادگی که می توان&nbsp; یک کامپیوتر یا تبلت را به یک شبکه متصل نمود می توان یه شی را به یک شبکه متصل نمود و از ان به مشابه یک سند اطلاعات تحت شبکه اینترنت&nbsp; با اینترانت استفاد نمود </span></div>
+<div id="wb_gsdfg" style="position:absolute;left:130px;top:281px;width:790px;height:144px;text-align:right;z-index:2;">
+<span style="color:#FFE4E1;font-family:Arial;font-size:16px;"> این فن آوری از یک جهت در مقایسه با پروتوکل های قدیمی خانه هوشمند نظیر&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; در برگیرنده تمام ظرفیت ها، همراه با نقاط قوت شبکه اینترنت می باشد و هیچ یک از محدودیت ها ی پروتکل های قدیمی نظیر عدم قابلیت توسعه و سفارشی نمودن فراینده ها را ندارد و از جهت دیگر بسیار از نظر اقتصادی مقرون به صرفه می باشد. در این فن آوری سطح کنترل و سطح حفاظت در همان سطح و توسعه شبکه جهانی اینترنت می باشد و تکنولوژی وایرلس این امکان را می دهد که بتوان این فن آوری را از&nbsp; یک پریز ساده تا یک ماشین پیچیده با همان امکانات اجرا نمود.<br>با این تکنولوژی داشتن خانه یا محله کار هوشمند یک رویای لوکس و گرانقیمت نیست بلکه یک نیاز مدرن با قابلیت اجرای ساده و کاملا اقتصادی می باشد . با این فن آوری می توان یک چرخه کامل از مدیریت جامع اطلات از، </span><span style="color:#00FF00;font-family:Arial;font-size:16px;"><u>جمع آوری داده</u>،&nbsp; </span><span style="color:#00BFFF;font-family:Arial;font-size:16px;"><u>پردازش داده</u></span><span style="color:#00FF00;font-family:Arial;font-size:16px;"> و&nbsp; </span><span style="color:#FFA500;font-family:Arial;font-size:16px;"><u>نشر داده</u></span><span style="color:#FFE4E1;font-family:Arial;font-size:16px;"> جهت استفاده در یک سیستم کوچک مانند خانه هوشمند یا یک سیستم صنعتی بزرگ را به آسانی طراحی و ایجاد نمود<br></span><span style="color:#FFE4E1;font-family:Tahoma;font-size:13px;">گروه فني مهندسي&nbsp; کي نو هدايت کنترل </span><span style="color:#FFE4E1;font-family:Arial;font-size:16px;">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; ..&
+nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; </span></div>
+<div id="wb_ggg" style="position:absolute;left:180px;top:46px;width:142px;height:16px;text-align:center;z-index:3;">
+<span style="color:#FFE4E1;font-family:Arial;font-size:13px;"><strong>Internet Of Things</strong></span></div>
+<div id="wb_jefd" style="position:absolute;left:398px;top:281px;width:138px;height:16px;text-align:center;z-index:4;">
+<span style="color:#FFE4E1;font-family:Arial;font-size:13px;"><strong>KNX,Z-wavw</strong></span></div></div>
+<input type="button" id="_link" onclick="ini_ws();return false;" name="" value="" style="position:absolute;left:875px;top:147px;width:37px;height:35px;z-index:13;">
+<input type="text" id="current_data" style="position:absolute;left:399px;top:147px;width:375px;height:27px;line-height:27px;z-index:14;" name="Editbox1" value="---" readonly>
+<div id="wb_CssMenu4" style="position:absolute;left:392px;top:182px;width:417px;height:30px;z-index:15;">
+<ul>
+<li class="firstmain"><a href="javascript:show_tab('_status');" target="_self" title="HOME">&#1608;&#1590;&#1593;&#1740;&#1578;&nbsp;&#1705;&#1604;&#1740;</a>
+</li>
+<li><a href="javascript:show_tab('_setting');" target="_self" title="Station Setting">&#1578;&#1606;&#1592;&#1740;&#1605;&#1575;&#1578;&nbsp;&#1587;&#1606;&#1587;&#1608;&#1585;</a>
+</li>
+<li><a href="javascript:show_tab('_wifi');" target="_self" title="Wifi Setting">&#1578;&#1606;&#1592;&#1740;&#1605;&#1575;&#1578;&nbsp;&#1588;&#1576;&#1705;&#1607;</a>
+</li>
+<li><a href="javascript:show_tab('_about');" target="_self" title="About Us">&#1583;&#1585;&#1576;&#1575;&#1585;&#1607;&nbsp;&#1605;&#1575;</a>
+</li>
+</ul>
+<br>
+</div>
+<!-- setting -->
+<div id="_setting" style="position:absolute;left:235px;top:207px;width:122px;height:72px;z-index:16">
+<input type="text" id="SES" style="position:absolute;left:79px;top:666px;width:163px;height:23px;line-height:23px;z-index:0;" name="Editbox1" value="serve.hos.sina.com" class="My_TX">
+<input type="button" id="Bseradd" onclick="setServerURL();return false;" name="" value="Set" style="position:absolute;left:17px;top:666px;width:46px;height:26px;z-index:1;"><script>
+function setServerURL()
+{
+
+x= document.getElementById("SES").value
+
+var command  = "URL=" + x;  
+//alert(command);
+   _Connection.send(command);
+
+}
+</script>
+<input type="checkbox" id="MONITOR" name="_hidecheck" value="on" style="position:absolute;left:597px;top:565px;z-index:2;"  onchange="Do_MONITOR(this.checked);return false;">
+<script>
+function Do_MONITOR(checked)
+{
+	if(checked) command  = "MON="+"1";
+	else        command  = "MON="+"0";
+
+	_Connection.send(command);
+}
+</script>
+<div id="wb_Text7" style="position:absolute;left:456px;top:352px;width:158px;height:18px;text-align:right;z-index:3;">
+<span style="color:#00FF00;font-family:Tahoma;font-size:15px;">&nbsp;&nbsp; اندازه گيري فشار خون </span></div>
+<div id="wb_Text1" style="position:absolute;left:548px;top:387px;width:66px;height:18px;text-align:right;z-index:4;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;"> پريوديک&nbsp; </span></div>
+<div id="wb_Text2" style="position:absolute;left:200px;top:380px;width:66px;height:18px;text-align:right;z-index:5;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;"> زمان ويژه&nbsp; </span></div>
+<select name="Combobox1" size="1" id="Combobox1" style="position:absolute;left:472px;top:387px;width:68px;height:25px;z-index:6;">
+<option selected value="A">10 m</option>
+<option value="B">20 m</option>
+<option value="C">30 m</option>
+<option value="D">40 m</option>
+<option value="E">50 m</option>
+<option value="F">1 h</option>
+<option value="G">2 h</option>
+<option value="H">3 h</option>
+<option value="I">4  h</option>
+<option value="J">5 h</option>
+<option value="K">6 h</option>
+<option value="L">8 h</option>
+<option value="M">10 h</option>
+<option value="O">12 h</option>
+</select>
+<input type="button" id="Button5" onclick="setActuDes();return false;" name="" value="Set" style="position:absolute;left:328px;top:390px;width:59px;height:25px;z-index:7;"><script>
+function setActuDes()
+{
+
+x=document.getElementById("ADS").value
+
+var command  = "ADS=" + x;  
+//alert(command);
+   _Connection.send(command);
+ 
+}
+</script>
+<input type="number" id="Editbox2" style="position:absolute;left:157px;top:380px;width:31px;height:23px;line-height:23px;z-index:8;" name="Editbox1" value="10" class="My_TX">
+<div id="wb_Text3" style="position:absolute;left:136px;top:383px;width:19px;height:19px;text-align:right;z-index:9;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:16px;"><strong>:</strong></span></div>
+<input type="number" id="Editbox3" style="position:absolute;left:114px;top:380px;width:31px;height:23px;line-height:23px;z-index:10;" name="Editbox1" value="10" class="My_TX">
+<input type="button" id="Button6" onclick="setActuDes();return false;" name="" value="Add" style="position:absolute;left:17px;top:380px;width:59px;height:25px;z-index:11;"><script>
+function setActuDes()
+{
+
+x=document.getElementById("ADS").value
+
+var command  = "ADS=" + x;  
+//alert(command);
+   _Connection.send(command);
+ 
+}
+</script>
+<div id="wb_Text4" style="position:absolute;left:503px;top:238px;width:112px;height:18px;text-align:right;z-index:12;">
+<span style="color:#00FF00;font-family:Tahoma;font-size:15px;">&nbsp;&nbsp; اندازه گيري دما </span></div>
+<div id="wb_Text5" style="position:absolute;left:441px;top:270px;width:175px;height:36px;text-align:right;z-index:13;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;"> پريود زماني ارسال به سرور&nbsp; </span></div>
+<input type="button" id="Button7" onclick="setActuDes();return false;" name="" value="Set" style="position:absolute;left:329px;top:270px;width:59px;height:25px;z-index:14;"><script>
+function setActuDes()
+{
+
+x=document.getElementById("ADS").value
+
+var command  = "ADS=" + x;  
+//alert(command);
+   _Connection.send(command);
+ 
+}
+</script>
+<input type="number" id="Editbox4" style="position:absolute;left:408px;top:268px;width:31px;height:23px;line-height:23px;z-index:15;" name="Editbox1" value="10" class="My_TX">
+<div id="wb_Text6" style="position:absolute;left:504px;top:303px;width:112px;height:18px;text-align:right;z-index:16;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;"> آستانه هشدار&nbsp; </span></div>
+<input type="button" id="Button8" onclick="setActuDes();return false;" name="" value="Set" style="position:absolute;left:329px;top:305px;width:59px;height:25px;z-index:17;"><script>
+function setActuDes()
+{
+
+x=document.getElementById("ADS").value
+
+var command  = "ADS=" + x;  
+//alert(command);
+   _Connection.send(command);
+ 
+}
+</script>
+<input type="number" id="Editbox5" style="position:absolute;left:408px;top:303px;width:31px;height:23px;line-height:23px;z-index:18;" name="Editbox1" value="37" class="My_TX">
+<div id="wb_Text8" style="position:absolute;left:472px;top:519px;width:211px;height:18px;text-align:right;z-index:19;">
+<span style="color:#FFD700;font-family:Tahoma;font-size:15px;"><strong> تنظيم فعاليتهاي&nbsp; هشدار&nbsp; </strong></span></div>
+<div id="wb_Text9" style="position:absolute;left:321px;top:560px;width:255px;height:195px;text-align:right;z-index:20;">
+<div style="line-height:39px;"><span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">ارسال ايميل </span></div>
+<div style="line-height:39px;"><span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">ارسال بر روي تلگرام</span></div>
+<div style="line-height:39px;"><span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">به صدا در آوردن زنگ يا چراق هشدار</span></div>
+<div style="line-height:39px;"><span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">ارسال به سرور درمانگاه / بيمارستان</span></div>
+<div style="line-height:17px;"><span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">شماره گيري فوريت هاي پزشکي</span></div>
+</div>
+<input type="text" id="Editbox6" style="position:absolute;left:80px;top:553px;width:174px;height:23px;line-height:23px;z-index:21;" name="Editbox1" value="MyName@MyDoc.com" class="My_TX">
+<input type="button" id="Button9" onclick="setActuDes();return false;" name="" value="Set" style="position:absolute;left:17px;top:553px;width:46px;height:25px;z-index:22;"><script>
+function setActuDes()
+{
+
+x=document.getElementById("ADS").value
+
+var command  = "ADS=" + x;  
+//alert(command);
+   _Connection.send(command);
+ 
+}
+</script>
+<input type="button" id="Button11" onclick="setActuDes();return false;" name="" value="Set" style="position:absolute;left:17px;top:623px;width:46px;height:25px;z-index:23;"><script>
+function setActuDes()
+{
+
+x=document.getElementById("ADS").value
+
+var command  = "ADS=" + x;  
+//alert(command);
+   _Connection.send(command);
+ 
+}
+</script>
+<select name="Combobox1" size="1" id="Combobox2" style="position:absolute;left:82px;top:623px;width:92px;height:25px;z-index:24;">
+<option selected value="L">Local</option>
+<option value="S">Remote</option>
+</select>
+<input type="text" id="Editbox7" style="position:absolute;left:79px;top:711px;width:59px;height:23px;line-height:23px;z-index:25;" name="Editbox1" value="113" class="My_TX">
+<input type="button" id="Button12" onclick="setServerURL();return false;" name="" value="Set" style="position:absolute;left:17px;top:711px;width:46px;height:26px;z-index:26;"><script>
+function setServerURL()
+{
+
+x= document.getElementById("SES").value
+
+var command  = "URL=" + x;  
+//alert(command);
+   _Connection.send(command);
+
+}
+</script>
+<div id="wb_Text10" style="position:absolute;left:493px;top:47px;width:112px;height:18px;text-align:right;z-index:27;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;"> شناسه دستگاه&nbsp; </span></div>
+<div id="wb_Text11" style="position:absolute;left:190px;top:47px;width:106px;height:18px;text-align:right;z-index:28;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;"> نام دستگاه&nbsp; </span></div>
+<div id="wb_Text12" style="position:absolute;left:413px;top:152px;width:192px;height:18px;text-align:right;z-index:29;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;"> ثبت دستگاه به سرور مرکزي </span></div>
+<input type="text" id="Editbox1" style="position:absolute;left:329px;top:40px;width:141px;height:23px;line-height:23px;z-index:30;" name="Editbox1" value="AS651746EF535" class="My_TX">
+<input type="text" id="Editbox8" style="position:absolute;left:91px;top:40px;width:107px;height:23px;line-height:23px;z-index:31;" name="Editbox1" value="My E-Health" class="My_TX">
+<input type="button" id="Button1" onclick="setActuDes();return false;" name="" value="Register" style="position:absolute;left:17px;top:145px;width:91px;height:25px;z-index:32;"><script>
+function setActuDes()
+{
+
+x=document.getElementById("ADS").value
+
+var command  = "ADS=" + x;  
+//alert(command);
+   _Connection.send(command);
+ 
+}
+</script>
+<select name="Combobox1" size="1" id="Combobox3" style="position:absolute;left:295px;top:98px;width:92px;height:25px;z-index:33;">
+<option selected value="L">روزانه</option>
+<option value="S">هفتگی</option>
+<option value="s">ماهیانه</option>
+<option value="b">سه ماهه</option>
+<option value="d">شش ماهه</option>
+</select>
+<div id="wb_Text13" style="position:absolute;left:464px;top:98px;width:141px;height:18px;text-align:right;z-index:34;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;"> ذخيره داده ها در بازه&nbsp;&nbsp; </span></div>
+<input type="button" id="Button2" onclick="setActuDes();return false;" name="" value="Download" style="position:absolute;left:17px;top:91px;width:93px;height:25px;z-index:35;"><script>
+function setActuDes()
+{
+
+x=document.getElementById("ADS").value
+
+var command  = "ADS=" + x;  
+//alert(command);
+   _Connection.send(command);
+ 
+}
+</script>
+<input type="checkbox" id="Checkbox1" name="_hidecheck" value="on" style="position:absolute;left:597px;top:601px;z-index:36;"  onchange="Do_MONITOR(this.checked);return false;">
+<script>
+function Do_MONITOR(checked)
+{
+	if(checked) command  = "MON="+"1";
+	else        command  = "MON="+"0";
+
+	_Connection.send(command);
+}
+</script>
+<input type="checkbox" id="Checkbox2" name="_hidecheck" value="on" style="position:absolute;left:597px;top:637px;z-index:37;"  onchange="Do_MONITOR(this.checked);return false;">
+<script>
+function Do_MONITOR(checked)
+{
+	if(checked) command  = "MON="+"1";
+	else        command  = "MON="+"0";
+
+	_Connection.send(command);
+}
+</script>
+<input type="checkbox" id="Checkbox3" name="_hidecheck" value="on" style="position:absolute;left:597px;top:673px;z-index:38;"  onchange="Do_MONITOR(this.checked);return false;">
+<script>
+function Do_MONITOR(checked)
+{
+	if(checked) command  = "MON="+"1";
+	else        command  = "MON="+"0";
+
+	_Connection.send(command);
+}
+</script>
+<input type="checkbox" id="Checkbox4" name="_hidecheck" value="on" style="position:absolute;left:597px;top:710px;z-index:39;"  onchange="Do_MONITOR(this.checked);return false;">
+<script>
+function Do_MONITOR(checked)
+{
+	if(checked) command  = "MON="+"1";
+	else        command  = "MON="+"0";
+
+	_Connection.send(command);
+}
+</script>
+<input type="button" id="Button3" onclick="setActuDes();return false;" name="" value="Set" style="position:absolute;left:17px;top:40px;width:46px;height:25px;z-index:40;"><script>
+function setActuDes()
+{
+
+x=document.getElementById("ADS").value
+
+var command  = "ADS=" + x;  
+//alert(command);
+   _Connection.send(command);
+ 
+}
+</script>
+<div id="wb_Text14" style="position:absolute;left:472px;top:8px;width:211px;height:18px;text-align:right;z-index:41;">
+<span style="color:#FFD700;font-family:Tahoma;font-size:15px;"><strong> مشخصات کلي دستگاه </strong></span></div>
+<div id="wb_Text15" style="position:absolute;left:472px;top:203px;width:211px;height:18px;text-align:right;z-index:42;">
+<span style="color:#FFD700;font-family:Tahoma;font-size:15px;"><strong> تنظيمات سنسورها</strong></span></div>
+<div id="wb_Text16" style="position:absolute;left:129px;top:238px;width:174px;height:18px;text-align:right;z-index:43;">
+<span style="color:#00FF00;font-family:Tahoma;font-size:15px;">&nbsp;&nbsp; اندازه گيري نبض&nbsp; </span></div>
+<div id="wb_Text17" style="position:absolute;left:129px;top:270px;width:175px;height:36px;text-align:right;z-index:44;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;"> پريود زماني ارسال به سرور&nbsp; </span></div>
+<input type="button" id="Button4" onclick="setActuDes();return false;" name="" value="Set" style="position:absolute;left:17px;top:270px;width:59px;height:25px;z-index:45;"><script>
+function setActuDes()
+{
+
+x=document.getElementById("ADS").value
+
+var command  = "ADS=" + x;  
+//alert(command);
+   _Connection.send(command);
+ 
+}
+</script>
+<input type="number" id="Editbox9" style="position:absolute;left:96px;top:268px;width:31px;height:23px;line-height:23px;z-index:46;" name="Editbox1" value="10" class="My_TX">
+<div id="wb_Text18" style="position:absolute;left:192px;top:303px;width:112px;height:18px;text-align:right;z-index:47;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;"> آستانه هشدار&nbsp; </span></div>
+<input type="button" id="Button10" onclick="setActuDes();return false;" name="" value="Set" style="position:absolute;left:17px;top:305px;width:59px;height:25px;z-index:48;"><script>
+function setActuDes()
+{
+
+x=document.getElementById("ADS").value
+
+var command  = "ADS=" + x;  
+//alert(command);
+   _Connection.send(command);
+ 
+}
+</script>
+<input type="number" id="Editbox10" style="position:absolute;left:96px;top:303px;width:31px;height:23px;line-height:23px;z-index:49;" name="Editbox1" value="37" class="My_TX">
+<div id="wb_Text19" style="position:absolute;left:456px;top:426px;width:160px;height:18px;text-align:right;z-index:50;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;"> آستانه هشدار بيشينه&nbsp; </span></div>
+<input type="button" id="Button13" onclick="setActuDes();return false;" name="" value="Set" style="position:absolute;left:328px;top:426px;width:59px;height:25px;z-index:51;"><script>
+function setActuDes()
+{
+
+x=document.getElementById("ADS").value
+
+var command  = "ADS=" + x;  
+//alert(command);
+   _Connection.send(command);
+ 
+}
+</script>
+<input type="number" id="Editbox11" style="position:absolute;left:423px;top:426px;width:31px;height:23px;line-height:23px;z-index:52;" name="Editbox1" value="12" class="My_TX">
+<div id="wb_Text20" style="position:absolute;left:456px;top:467px;width:160px;height:18px;text-align:right;z-index:53;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;"> آستانه هشدار کمينه&nbsp; </span></div>
+<input type="button" id="Button14" onclick="setActuDes();return false;" name="" value="Set" style="position:absolute;left:328px;top:467px;width:59px;height:25px;z-index:54;"><script>
+function setActuDes()
+{
+
+x=document.getElementById("ADS").value
+
+var command  = "ADS=" + x;  
+//alert(command);
+   _Connection.send(command);
+ 
+}
+</script>
+<input type="number" id="Editbox12" style="position:absolute;left:423px;top:467px;width:31px;height:23px;line-height:23px;z-index:55;" name="Editbox1" value="10" class="My_TX">
+<div id="wb_Text21" style="position:absolute;left:114px;top:95px;width:141px;height:18px;text-align:right;z-index:56;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;"> دانلود سابقه داد ها&nbsp;&nbsp; </span></div></div>
+<div id="wb_Text1" style="position:absolute;left:343px;top:986px;width:174px;height:16px;z-index:17;text-align:left;">
+<span style="color:#000000;font-family:Arial;font-size:13px;">1</span></div>
+</body>
+</html>

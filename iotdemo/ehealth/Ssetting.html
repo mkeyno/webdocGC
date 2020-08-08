@@ -1,0 +1,917 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Keyno Guidance & Control</title>
+<meta name="generator" content=" ">
+<style type="text/css">
+body
+{
+   background-color: #000000;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+a
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+a:visited
+{
+   color: #FF8C00;
+}
+a:active
+{
+   color: #FF0000;
+}
+a:hover
+{
+   color: #FFFFFF;
+   text-decoration: underline;
+}
+#SES
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 16px;
+   text-align: center;
+   vertical-align: middle;
+}
+#Bseradd
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#wb_Text7 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text7 div
+{
+   text-align: right;
+}
+#wb_Text1 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text1 div
+{
+   text-align: right;
+}
+#wb_Text2 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text2 div
+{
+   text-align: right;
+}
+#Combobox1
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 16px;
+}
+#Button5
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#Editbox2
+{
+   border: 1px #1E1E1E solid;
+   background-color: transparent;
+   color :#FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 15px;
+   text-align: center;
+   vertical-align: middle;
+}
+#wb_Text3 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text3 div
+{
+   text-align: right;
+}
+#Editbox3
+{
+   border: 1px #1E1E1E solid;
+   background-color: transparent;
+   color :#FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 15px;
+   text-align: center;
+   vertical-align: middle;
+}
+#Button6
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#wb_Text4 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text4 div
+{
+   text-align: right;
+}
+#wb_Text5 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text5 div
+{
+   text-align: right;
+}
+#Button7
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#Editbox4
+{
+   border: 1px #1E1E1E solid;
+   background-color: transparent;
+   color :#FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 15px;
+   text-align: center;
+   vertical-align: middle;
+}
+#wb_Text6 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text6 div
+{
+   text-align: right;
+}
+#Button8
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#Editbox5
+{
+   border: 1px #1E1E1E solid;
+   background-color: transparent;
+   color :#FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 15px;
+   text-align: center;
+   vertical-align: middle;
+}
+#wb_Text8 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text8 div
+{
+   text-align: right;
+}
+#wb_Text9 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text9 div
+{
+   text-align: right;
+   white-space: nowrap;
+}
+#Editbox6
+{
+   border: 1px #1E1E1E solid;
+   background-color: transparent;
+   color :#FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 15px;
+   text-align: center;
+   vertical-align: middle;
+}
+#Button9
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#Button11
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#Combobox2
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 16px;
+}
+#Editbox7
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 16px;
+   text-align: center;
+   vertical-align: middle;
+}
+#Button12
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#wb_Text10 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text10 div
+{
+   text-align: right;
+}
+#wb_Text11 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text11 div
+{
+   text-align: right;
+}
+#wb_Text12 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text12 div
+{
+   text-align: right;
+}
+#Editbox1
+{
+   border: 1px #1E1E1E solid;
+   background-color: transparent;
+   color :#FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 15px;
+   text-align: center;
+   vertical-align: middle;
+}
+#Editbox8
+{
+   border: 1px #1E1E1E solid;
+   background-color: transparent;
+   color :#FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 15px;
+   text-align: center;
+   vertical-align: middle;
+}
+#Button1
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#Combobox3
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Tahoma;
+   font-weight: normal;
+   font-size: 16px;
+}
+#wb_Text13 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text13 div
+{
+   text-align: right;
+}
+#Button2
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#Button3
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#wb_Text14 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text14 div
+{
+   text-align: right;
+}
+#wb_Text15 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text15 div
+{
+   text-align: right;
+}
+#wb_Text16 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text16 div
+{
+   text-align: right;
+}
+#wb_Text17 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text17 div
+{
+   text-align: right;
+}
+#Button4
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#Editbox9
+{
+   border: 1px #1E1E1E solid;
+   background-color: transparent;
+   color :#FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 15px;
+   text-align: center;
+   vertical-align: middle;
+}
+#wb_Text18 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text18 div
+{
+   text-align: right;
+}
+#Button10
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#Editbox10
+{
+   border: 1px #1E1E1E solid;
+   background-color: transparent;
+   color :#FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 15px;
+   text-align: center;
+   vertical-align: middle;
+}
+#wb_Text19 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text19 div
+{
+   text-align: right;
+}
+#Button13
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#Editbox11
+{
+   border: 1px #1E1E1E solid;
+   background-color: transparent;
+   color :#FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 15px;
+   text-align: center;
+   vertical-align: middle;
+}
+#wb_Text20 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text20 div
+{
+   text-align: right;
+}
+#Button14
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#Editbox12
+{
+   border: 1px #1E1E1E solid;
+   background-color: transparent;
+   color :#FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 15px;
+   text-align: center;
+   vertical-align: middle;
+}
+#wb_Text21 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text21 div
+{
+   text-align: right;
+}
+</style>
+</head>
+<body>
+<input type="text" id="SES" style="position:absolute;left:79px;top:666px;width:163px;height:23px;line-height:23px;z-index:0;" name="Editbox1" value="serve.hos.sina.com" class="My_TX">
+<input type="button" id="Bseradd" onclick="setServerURL();return false;" name="" value="Set" style="position:absolute;left:17px;top:666px;width:46px;height:26px;z-index:1;"><script>
+function setServerURL()
+{
+
+x= document.getElementById("SES").value
+
+var command  = "URL=" + x;  
+//alert(command);
+   _Connection.send(command);
+
+}
+</script>
+<input type="checkbox" id="MONITOR" name="_hidecheck" value="on" style="position:absolute;left:597px;top:565px;z-index:2;"  onchange="Do_MONITOR(this.checked);return false;">
+<script>
+function Do_MONITOR(checked)
+{
+	if(checked) command  = "MON="+"1";
+	else        command  = "MON="+"0";
+
+	_Connection.send(command);
+}
+</script>
+<div id="wb_Text7" style="position:absolute;left:456px;top:352px;width:158px;height:18px;text-align:right;z-index:3;">
+<span style="color:#00FF00;font-family:Tahoma;font-size:15px;">&nbsp;&nbsp; اندازه گيري فشار خون </span></div>
+<div id="wb_Text1" style="position:absolute;left:548px;top:387px;width:66px;height:18px;text-align:right;z-index:4;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;"> پريوديک&nbsp; </span></div>
+<div id="wb_Text2" style="position:absolute;left:200px;top:380px;width:66px;height:18px;text-align:right;z-index:5;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;"> زمان ويژه&nbsp; </span></div>
+<select name="Combobox1" size="1" id="Combobox1" style="position:absolute;left:472px;top:387px;width:68px;height:25px;z-index:6;">
+<option selected value="A">10 m</option>
+<option value="B">20 m</option>
+<option value="C">30 m</option>
+<option value="D">40 m</option>
+<option value="E">50 m</option>
+<option value="F">1 h</option>
+<option value="G">2 h</option>
+<option value="H">3 h</option>
+<option value="I">4  h</option>
+<option value="J">5 h</option>
+<option value="K">6 h</option>
+<option value="L">8 h</option>
+<option value="M">10 h</option>
+<option value="O">12 h</option>
+</select>
+<input type="button" id="Button5" onclick="setActuDes();return false;" name="" value="Set" style="position:absolute;left:328px;top:390px;width:59px;height:25px;z-index:7;"><script>
+function setActuDes()
+{
+
+x=document.getElementById("ADS").value
+
+var command  = "ADS=" + x;  
+//alert(command);
+   _Connection.send(command);
+ 
+}
+</script>
+<input type="number" id="Editbox2" style="position:absolute;left:157px;top:380px;width:31px;height:23px;line-height:23px;z-index:8;" name="Editbox1" value="10" class="My_TX">
+<div id="wb_Text3" style="position:absolute;left:136px;top:383px;width:19px;height:19px;text-align:right;z-index:9;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:16px;"><strong>:</strong></span></div>
+<input type="number" id="Editbox3" style="position:absolute;left:114px;top:380px;width:31px;height:23px;line-height:23px;z-index:10;" name="Editbox1" value="10" class="My_TX">
+<input type="button" id="Button6" onclick="setActuDes();return false;" name="" value="Add" style="position:absolute;left:17px;top:380px;width:59px;height:25px;z-index:11;"><script>
+function setActuDes()
+{
+
+x=document.getElementById("ADS").value
+
+var command  = "ADS=" + x;  
+//alert(command);
+   _Connection.send(command);
+ 
+}
+</script>
+<div id="wb_Text4" style="position:absolute;left:503px;top:238px;width:112px;height:18px;text-align:right;z-index:12;">
+<span style="color:#00FF00;font-family:Tahoma;font-size:15px;">&nbsp;&nbsp; اندازه گيري دما </span></div>
+<div id="wb_Text5" style="position:absolute;left:441px;top:270px;width:175px;height:36px;text-align:right;z-index:13;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;"> پريود زماني ارسال به سرور&nbsp; </span></div>
+<input type="button" id="Button7" onclick="setActuDes();return false;" name="" value="Set" style="position:absolute;left:329px;top:270px;width:59px;height:25px;z-index:14;"><script>
+function setActuDes()
+{
+
+x=document.getElementById("ADS").value
+
+var command  = "ADS=" + x;  
+//alert(command);
+   _Connection.send(command);
+ 
+}
+</script>
+<input type="number" id="Editbox4" style="position:absolute;left:408px;top:268px;width:31px;height:23px;line-height:23px;z-index:15;" name="Editbox1" value="10" class="My_TX">
+<div id="wb_Text6" style="position:absolute;left:504px;top:303px;width:112px;height:18px;text-align:right;z-index:16;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;"> آستانه هشدار&nbsp; </span></div>
+<input type="button" id="Button8" onclick="setActuDes();return false;" name="" value="Set" style="position:absolute;left:329px;top:305px;width:59px;height:25px;z-index:17;"><script>
+function setActuDes()
+{
+
+x=document.getElementById("ADS").value
+
+var command  = "ADS=" + x;  
+//alert(command);
+   _Connection.send(command);
+ 
+}
+</script>
+<input type="number" id="Editbox5" style="position:absolute;left:408px;top:303px;width:31px;height:23px;line-height:23px;z-index:18;" name="Editbox1" value="37" class="My_TX">
+<div id="wb_Text8" style="position:absolute;left:472px;top:519px;width:211px;height:18px;text-align:right;z-index:19;">
+<span style="color:#FFD700;font-family:Tahoma;font-size:15px;"><strong> تنظيم فعاليتهاي&nbsp; هشدار&nbsp; </strong></span></div>
+<div id="wb_Text9" style="position:absolute;left:321px;top:560px;width:255px;height:195px;text-align:right;z-index:20;">
+<div style="line-height:39px;"><span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">ارسال ايميل </span></div>
+<div style="line-height:39px;"><span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">ارسال بر روي تلگرام</span></div>
+<div style="line-height:39px;"><span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">به صدا در آوردن زنگ يا چراق هشدار</span></div>
+<div style="line-height:39px;"><span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">ارسال به سرور درمانگاه / بيمارستان</span></div>
+<div style="line-height:17px;"><span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">شماره گيري فوريت هاي پزشکي</span></div>
+</div>
+<input type="text" id="Editbox6" style="position:absolute;left:80px;top:553px;width:174px;height:23px;line-height:23px;z-index:21;" name="Editbox1" value="MyName@MyDoc.com" class="My_TX">
+<input type="button" id="Button9" onclick="setActuDes();return false;" name="" value="Set" style="position:absolute;left:17px;top:553px;width:46px;height:25px;z-index:22;"><script>
+function setActuDes()
+{
+
+x=document.getElementById("ADS").value
+
+var command  = "ADS=" + x;  
+//alert(command);
+   _Connection.send(command);
+ 
+}
+</script>
+<input type="button" id="Button11" onclick="setActuDes();return false;" name="" value="Set" style="position:absolute;left:17px;top:623px;width:46px;height:25px;z-index:23;"><script>
+function setActuDes()
+{
+
+x=document.getElementById("ADS").value
+
+var command  = "ADS=" + x;  
+//alert(command);
+   _Connection.send(command);
+ 
+}
+</script>
+<select name="Combobox1" size="1" id="Combobox2" style="position:absolute;left:82px;top:623px;width:92px;height:25px;z-index:24;">
+<option selected value="L">Local</option>
+<option value="S">Remote</option>
+</select>
+<input type="text" id="Editbox7" style="position:absolute;left:79px;top:711px;width:59px;height:23px;line-height:23px;z-index:25;" name="Editbox1" value="113" class="My_TX">
+<input type="button" id="Button12" onclick="setServerURL();return false;" name="" value="Set" style="position:absolute;left:17px;top:711px;width:46px;height:26px;z-index:26;"><script>
+function setServerURL()
+{
+
+x= document.getElementById("SES").value
+
+var command  = "URL=" + x;  
+//alert(command);
+   _Connection.send(command);
+
+}
+</script>
+<div id="wb_Text10" style="position:absolute;left:493px;top:47px;width:112px;height:18px;text-align:right;z-index:27;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;"> شناسه دستگاه&nbsp; </span></div>
+<div id="wb_Text11" style="position:absolute;left:190px;top:47px;width:106px;height:18px;text-align:right;z-index:28;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;"> نام دستگاه&nbsp; </span></div>
+<div id="wb_Text12" style="position:absolute;left:413px;top:152px;width:192px;height:18px;text-align:right;z-index:29;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;"> ثبت دستگاه به سرور مرکزي </span></div>
+<input type="text" id="Editbox1" style="position:absolute;left:329px;top:40px;width:141px;height:23px;line-height:23px;z-index:30;" name="Editbox1" value="AS651746EF535" class="My_TX">
+<input type="text" id="Editbox8" style="position:absolute;left:91px;top:40px;width:107px;height:23px;line-height:23px;z-index:31;" name="Editbox1" value="My E-Health" class="My_TX">
+<input type="button" id="Button1" onclick="setActuDes();return false;" name="" value="Register" style="position:absolute;left:17px;top:145px;width:91px;height:25px;z-index:32;"><script>
+function setActuDes()
+{
+
+x=document.getElementById("ADS").value
+
+var command  = "ADS=" + x;  
+//alert(command);
+   _Connection.send(command);
+ 
+}
+</script>
+<select name="Combobox1" size="1" id="Combobox3" style="position:absolute;left:295px;top:98px;width:92px;height:25px;z-index:33;">
+<option selected value="L">روزانه</option>
+<option value="S">هفتگی</option>
+<option value="s">ماهیانه</option>
+<option value="b">سه ماهه</option>
+<option value="d">شش ماهه</option>
+</select>
+<div id="wb_Text13" style="position:absolute;left:464px;top:98px;width:141px;height:18px;text-align:right;z-index:34;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;"> ذخيره داده ها در بازه&nbsp;&nbsp; </span></div>
+<input type="button" id="Button2" onclick="setActuDes();return false;" name="" value="Download" style="position:absolute;left:17px;top:91px;width:93px;height:25px;z-index:35;"><script>
+function setActuDes()
+{
+
+x=document.getElementById("ADS").value
+
+var command  = "ADS=" + x;  
+//alert(command);
+   _Connection.send(command);
+ 
+}
+</script>
+<input type="checkbox" id="Checkbox1" name="_hidecheck" value="on" style="position:absolute;left:597px;top:601px;z-index:36;"  onchange="Do_MONITOR(this.checked);return false;">
+<script>
+function Do_MONITOR(checked)
+{
+	if(checked) command  = "MON="+"1";
+	else        command  = "MON="+"0";
+
+	_Connection.send(command);
+}
+</script>
+<input type="checkbox" id="Checkbox2" name="_hidecheck" value="on" style="position:absolute;left:597px;top:637px;z-index:37;"  onchange="Do_MONITOR(this.checked);return false;">
+<script>
+function Do_MONITOR(checked)
+{
+	if(checked) command  = "MON="+"1";
+	else        command  = "MON="+"0";
+
+	_Connection.send(command);
+}
+</script>
+<input type="checkbox" id="Checkbox3" name="_hidecheck" value="on" style="position:absolute;left:597px;top:673px;z-index:38;"  onchange="Do_MONITOR(this.checked);return false;">
+<script>
+function Do_MONITOR(checked)
+{
+	if(checked) command  = "MON="+"1";
+	else        command  = "MON="+"0";
+
+	_Connection.send(command);
+}
+</script>
+<input type="checkbox" id="Checkbox4" name="_hidecheck" value="on" style="position:absolute;left:597px;top:710px;z-index:39;"  onchange="Do_MONITOR(this.checked);return false;">
+<script>
+function Do_MONITOR(checked)
+{
+	if(checked) command  = "MON="+"1";
+	else        command  = "MON="+"0";
+
+	_Connection.send(command);
+}
+</script>
+<input type="button" id="Button3" onclick="setActuDes();return false;" name="" value="Set" style="position:absolute;left:17px;top:40px;width:46px;height:25px;z-index:40;"><script>
+function setActuDes()
+{
+
+x=document.getElementById("ADS").value
+
+var command  = "ADS=" + x;  
+//alert(command);
+   _Connection.send(command);
+ 
+}
+</script>
+<div id="wb_Text14" style="position:absolute;left:472px;top:8px;width:211px;height:18px;text-align:right;z-index:41;">
+<span style="color:#FFD700;font-family:Tahoma;font-size:15px;"><strong> مشخصات کلي دستگاه </strong></span></div>
+<div id="wb_Text15" style="position:absolute;left:472px;top:203px;width:211px;height:18px;text-align:right;z-index:42;">
+<span style="color:#FFD700;font-family:Tahoma;font-size:15px;"><strong> تنظيمات سنسورها</strong></span></div>
+<div id="wb_Text16" style="position:absolute;left:129px;top:238px;width:174px;height:18px;text-align:right;z-index:43;">
+<span style="color:#00FF00;font-family:Tahoma;font-size:15px;">&nbsp;&nbsp; اندازه گيري نبض&nbsp; </span></div>
+<div id="wb_Text17" style="position:absolute;left:129px;top:270px;width:175px;height:36px;text-align:right;z-index:44;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;"> پريود زماني ارسال به سرور&nbsp; </span></div>
+<input type="button" id="Button4" onclick="setActuDes();return false;" name="" value="Set" style="position:absolute;left:17px;top:270px;width:59px;height:25px;z-index:45;"><script>
+function setActuDes()
+{
+
+x=document.getElementById("ADS").value
+
+var command  = "ADS=" + x;  
+//alert(command);
+   _Connection.send(command);
+ 
+}
+</script>
+<input type="number" id="Editbox9" style="position:absolute;left:96px;top:268px;width:31px;height:23px;line-height:23px;z-index:46;" name="Editbox1" value="10" class="My_TX">
+<div id="wb_Text18" style="position:absolute;left:192px;top:303px;width:112px;height:18px;text-align:right;z-index:47;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;"> آستانه هشدار&nbsp; </span></div>
+<input type="button" id="Button10" onclick="setActuDes();return false;" name="" value="Set" style="position:absolute;left:17px;top:305px;width:59px;height:25px;z-index:48;"><script>
+function setActuDes()
+{
+
+x=document.getElementById("ADS").value
+
+var command  = "ADS=" + x;  
+//alert(command);
+   _Connection.send(command);
+ 
+}
+</script>
+<input type="number" id="Editbox10" style="position:absolute;left:96px;top:303px;width:31px;height:23px;line-height:23px;z-index:49;" name="Editbox1" value="37" class="My_TX">
+<div id="wb_Text19" style="position:absolute;left:456px;top:426px;width:160px;height:18px;text-align:right;z-index:50;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;"> آستانه هشدار بيشينه&nbsp; </span></div>
+<input type="button" id="Button13" onclick="setActuDes();return false;" name="" value="Set" style="position:absolute;left:328px;top:426px;width:59px;height:25px;z-index:51;"><script>
+function setActuDes()
+{
+
+x=document.getElementById("ADS").value
+
+var command  = "ADS=" + x;  
+//alert(command);
+   _Connection.send(command);
+ 
+}
+</script>
+<input type="number" id="Editbox11" style="position:absolute;left:423px;top:426px;width:31px;height:23px;line-height:23px;z-index:52;" name="Editbox1" value="12" class="My_TX">
+<div id="wb_Text20" style="position:absolute;left:456px;top:467px;width:160px;height:18px;text-align:right;z-index:53;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;"> آستانه هشدار کمينه&nbsp; </span></div>
+<input type="button" id="Button14" onclick="setActuDes();return false;" name="" value="Set" style="position:absolute;left:328px;top:467px;width:59px;height:25px;z-index:54;"><script>
+function setActuDes()
+{
+
+x=document.getElementById("ADS").value
+
+var command  = "ADS=" + x;  
+//alert(command);
+   _Connection.send(command);
+ 
+}
+</script>
+<input type="number" id="Editbox12" style="position:absolute;left:423px;top:467px;width:31px;height:23px;line-height:23px;z-index:55;" name="Editbox1" value="10" class="My_TX">
+<div id="wb_Text21" style="position:absolute;left:114px;top:95px;width:141px;height:18px;text-align:right;z-index:56;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;"> دانلود سابقه داد ها&nbsp;&nbsp; </span></div>
+</body>
+</html>

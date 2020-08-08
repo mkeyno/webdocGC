@@ -1,0 +1,178 @@
+#Shape1
+{
+   width: 100px;
+   height: 52px;
+   background-color: #F0F0F0;
+   border: 1px #A0A0A0 solid;
+}
+#0motor
+{
+   border: 1px #A9A9A9 solid;
+   -moz-border-radius: 60px;
+   -webkit-border-radius: 60px;
+   border-radius: 60px;
+   background-color: #FF0000;
+   color: #000000;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 13px;
+}
+.relay
+{
+   border: 1px #A9A9A9 solid;
+   -moz-border-radius: 60px;
+   -webkit-border-radius: 60px;
+   border-radius: 60px;
+   background-color: #FF0000;
+   color: #000000;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 13px;
+}
+.pbar
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   text-align: left;
+   vertical-align: middle;
+}
+.bar
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #0000FF;
+   background: -moz-linear-gradient(bottom,#0000FF 0%,#FF0000 100%);
+   background: -webkit-linear-gradient(bottom,#0000FF 0%,#FF0000 100%);
+   background: -o-linear-gradient(bottom,#0000FF 0%,#FF0000 100%);
+   background: -ms-linear-gradient(bottom,#0000FF 0%,#FF0000 100%);
+   background: linear-gradient(bottom,#0000FF 0%,#FF0000 100%);
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   text-align: left;
+   vertical-align: middle;
+}
+.bulb
+{
+   border: 1px #A9A9A9 solid;
+   -moz-border-radius: 12px;
+   -webkit-border-radius: 12px;
+   border-radius: 12px;
+   background-color: #FF0000;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   text-align: left;
+   vertical-align: middle;
+}
+.My_TX_Value
+{
+   border: 0px #A9A9A9 solid;
+   -moz-border-radius: 12px;
+   -webkit-border-radius: 12px;
+   border-radius: 12px;
+   background-color: #D3D3D3;
+   color :#0000FF;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 13px;
+   text-align: center;
+   vertical-align: middle;
+}
+.My_TX
+{
+   border: 1px #C0C0C0 solid;
+   background-color: transparent;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   text-align: center;
+   vertical-align: middle;
+}
+#upate_status
+{
+   border: 0px #A9A9A9 solid;
+   background-color: transparent;
+   color: #000000;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 16px;
+}
+.My_layer
+{
+ background-color: #FAF0E6;
+   border: 1px #000000 solid;
+   -moz-border-radius: 20px;
+   -webkit-border-radius: 20px;
+   border-radius: 20px;
+   filter: alpha(opacity=90);
+   opacity: 0.90;	
+}
+#SMS_table
+{
+   border: 2px #C0C0C0 solid;
+   background-color: transparent;
+   border-spacing: 1px;
+}
+#SMS_table tr
+{
+   padding: border: 1px #C0C0C0 solid;
+}
+#SMS_table td
+{
+   padding: 0px 0px 0px 0px;
+}
+#SMS_table td div
+{
+   white-space: nowrap;
+}
+#SMS_table .cell0
+{
+   background-color: transparent;
+   border: 1px #C0C0C0 solid;
+   text-align: center;
+   vertical-align: top;
+   width: 77px;
+   height: 25px;
+}
+#SMS_table .cell1
+{
+   background-color: transparent;
+   border: 1px #C0C0C0 solid;
+   text-align: center;
+   vertical-align: top;
+   width: 400px;
+   height: 25px;
+}
+#SMS_table .cell2
+{
+   background-color: transparent;
+   border: 1px #C0C0C0 solid;
+   text-align: center;
+   vertical-align: top;
+   width: 135px;
+   height: 25px;
+}
+#SMS_table .cell3
+{
+   background-color: transparent;
+   border: 1px #C0C0C0 solid;
+   text-align: center;
+   vertical-align: top;
+   width: 143px;
+   height: 25px;
+}
+#SMS_table .cell4
+{
+   background-color: transparent;
+   border: 1px #C0C0C0 solid;
+   text-align: center;
+   vertical-align: top;
+   height: 25px;
+}

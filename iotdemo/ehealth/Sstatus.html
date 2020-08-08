@@ -1,0 +1,522 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Keyno Guidance & Control</title>
+<meta name="generator" content=" ">
+<style type="text/css">
+body
+{
+   background-color: #000000;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+@-webkit-keyframes transform-bounch
+{
+   0% { -webkit-transform:  rotate(0deg);  }
+   20% { -webkit-transform:  rotate(0deg);  }
+   40% { -webkit-transform:  rotate(0deg) translate(0px,-30px);  }
+   50% { -webkit-transform:  rotate(0deg);  }
+   60% { -webkit-transform:  rotate(0deg) translate(0px,-15px);  }
+   80% { -webkit-transform:  rotate(0deg);  }
+   100% { -webkit-transform:  rotate(0deg);  }
+}
+@-moz-keyframes transform-bounch
+{
+   0% { -moz-transform:  rotate(0deg);  }
+   20% { -moz-transform:  rotate(0deg);  }
+   40% { -moz-transform:  rotate(0deg) translate(0px,-30px);  }
+   50% { -moz-transform:  rotate(0deg);  }
+   60% { -moz-transform:  rotate(0deg) translate(0px,-15px);  }
+   80% { -moz-transform:  rotate(0deg);  }
+   100% { -moz-transform:  rotate(0deg);  }
+}
+@-o-keyframes transform-bounch
+{
+   0% { -o-transform:  rotate(0deg);  }
+   20% { -o-transform:  rotate(0deg);  }
+   40% { -o-transform:  rotate(0deg) translate(0px,-30px);  }
+   50% { -o-transform:  rotate(0deg);  }
+   60% { -o-transform:  rotate(0deg) translate(0px,-15px);  }
+   80% { -o-transform:  rotate(0deg);  }
+   100% { -o-transform:  rotate(0deg);  }
+}
+@-ms-keyframes transform-bounch
+{
+   0% { -ms-transform:  rotate(0deg);  }
+   20% { -ms-transform:  rotate(0deg);  }
+   40% { -ms-transform:  rotate(0deg) translate(0px,-30px);  }
+   50% { -ms-transform:  rotate(0deg);  }
+   60% { -ms-transform:  rotate(0deg) translate(0px,-15px);  }
+   80% { -ms-transform:  rotate(0deg);  }
+   100% { -ms-transform:  rotate(0deg);  }
+}
+@keyframes transform-bounch
+{
+   0% { transform:  rotate(0deg);  }
+   20% { transform:  rotate(0deg);  }
+   40% { transform:  rotate(0deg) translate(0px,-30px);  }
+   50% { transform:  rotate(0deg);  }
+   60% { transform:  rotate(0deg) translate(0px,-15px);  }
+   80% { transform:  rotate(0deg);  }
+   100% { transform:  rotate(0deg);  }
+}
+@-webkit-keyframes transform-pulse
+{
+   0% { -webkit-transform:  rotate(0deg);  }
+   50% { -webkit-transform:  rotate(0deg) scale(1.1,1.1);  }
+   100% { -webkit-transform:  rotate(0deg);  }
+}
+@-moz-keyframes transform-pulse
+{
+   0% { -moz-transform:  rotate(0deg);  }
+   50% { -moz-transform:  rotate(0deg) scale(1.1,1.1);  }
+   100% { -moz-transform:  rotate(0deg);  }
+}
+@-o-keyframes transform-pulse
+{
+   0% { -o-transform:  rotate(0deg);  }
+   50% { -o-transform:  rotate(0deg) scale(1.1,1.1);  }
+   100% { -o-transform:  rotate(0deg);  }
+}
+@-ms-keyframes transform-pulse
+{
+   0% { -ms-transform:  rotate(0deg);  }
+   50% { -ms-transform:  rotate(0deg) scale(1.1,1.1);  }
+   100% { -ms-transform:  rotate(0deg);  }
+}
+@keyframes transform-pulse
+{
+   0% { transform:  rotate(0deg);  }
+   50% { transform:  rotate(0deg) scale(1.1,1.1);  }
+   100% { transform:  rotate(0deg);  }
+}
+a
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+a:visited
+{
+   color: #FF8C00;
+}
+a:active
+{
+   color: #FF0000;
+}
+a:hover
+{
+   color: #FFFFFF;
+   text-decoration: underline;
+}
+#wifimode
+{
+   border: 0px #FFFFFF solid;
+   background-color: transparent;
+   color :#FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 15px;
+   text-align: center;
+   vertical-align: middle;
+}
+#localip
+{
+   border: 0px #FFFFFF solid;
+   background-color: transparent;
+   color :#FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 15px;
+   text-align: center;
+   vertical-align: middle;
+}
+#serverip
+{
+   border: 0px #FFFFFF solid;
+   background-color: transparent;
+   color :#FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 15px;
+   text-align: center;
+   vertical-align: middle;
+}
+#hostID
+{
+   border: 0px #FFFFFF solid;
+   background-color: transparent;
+   color :#FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 15px;
+   text-align: center;
+   vertical-align: middle;
+}
+#AP_name
+{
+   border: 0px #FFFFFF solid;
+   background-color: transparent;
+   color :#FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 15px;
+   text-align: center;
+   vertical-align: middle;
+}
+#Budcxvxtton1
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #000000;
+   font-family: Tahoma;
+   font-weight: normal;
+   font-size: 13px;
+}
+#_SSID
+{
+   border: 0px #FFFFFF solid;
+   background-color: transparent;
+   color :#FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 15px;
+   text-align: center;
+   vertical-align: middle;
+}
+#license
+{
+   border: 0px #FFFFFF solid;
+   background-color: transparent;
+   color :#FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 15px;
+   text-align: center;
+   vertical-align: middle;
+}
+#software
+{
+   border: 0px #FFFFFF solid;
+   background-color: transparent;
+   color :#FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 15px;
+   text-align: center;
+   vertical-align: middle;
+}
+#wb_Text3 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text3 div
+{
+   text-align: right;
+}
+#wb_Text4 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text4 div
+{
+   text-align: right;
+}
+#wb_Text5 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text5 div
+{
+   text-align: right;
+}
+#wb_Text6 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text6 div
+{
+   text-align: right;
+}
+#wb_Text7 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text7 div
+{
+   text-align: right;
+}
+#wb_Text9 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text9 div
+{
+   text-align: right;
+}
+#wb_Text8 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text8 div
+{
+   text-align: right;
+}
+#wb_Text10 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text10 div
+{
+   text-align: right;
+}
+#wb_Text11 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text11 div
+{
+   text-align: right;
+}
+#wb_Text12 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text12 div
+{
+   text-align: right;
+}
+#Editbox1
+{
+   border: 1px #FFFFFF solid;
+   background-color: transparent;
+   color :#FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 15px;
+   text-align: center;
+   vertical-align: middle;
+}
+#Editbox2
+{
+   border: 1px #FFFFFF solid;
+   background-color: transparent;
+   color :#FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 15px;
+   text-align: center;
+   vertical-align: middle;
+}
+#Editbox3
+{
+   border: 1px #FFFFFF solid;
+   background-color: transparent;
+   color :#FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 15px;
+   text-align: center;
+   vertical-align: middle;
+}
+#Editbox4
+{
+   border: 1px #FFFFFF solid;
+   background-color: transparent;
+   color :#FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 15px;
+   text-align: center;
+   vertical-align: middle;
+}
+#wb_Text1 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text1 div
+{
+   text-align: right;
+}
+#wb_Text2 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text2 div
+{
+   text-align: right;
+}
+#wb_Text13 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text13 div
+{
+   text-align: right;
+}
+#wb_Text14 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text14 div
+{
+   text-align: right;
+}
+#Image1
+{
+   border: 0px #000000 solid;
+   -webkit-animation: transform-pulse 500ms linear 0ms infinite normal;
+   -moz-animation: transform-pulse 500ms linear 0ms infinite normal;
+   -ms-animation: transform-pulse 500ms linear 0ms infinite normal;
+   animation: transform-pulse 500ms linear 0ms infinite normal;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#Image2
+{
+   border: 0px #000000 solid;
+   -webkit-animation: transform-bounch 1500ms linear 0ms infinite normal;
+   -moz-animation: transform-bounch 1500ms linear 0ms infinite normal;
+   -ms-animation: transform-bounch 1500ms linear 0ms infinite normal;
+   animation: transform-bounch 1500ms linear 0ms infinite normal;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#Image3
+{
+   border: 0px #000000 solid;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#Image4
+{
+   border: 0px #000000 solid;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+</style>
+</head>
+<body>
+<input type="text" id="wifimode" style="position:absolute;left:231px;top:50px;width:162px;height:27px;line-height:27px;z-index:0;" name="Editbox1" value="---" readonly class="My_TX">
+<input type="text" id="localip" style="position:absolute;left:231px;top:128px;width:162px;height:27px;line-height:27px;z-index:1;" name="Editbox1" value="---" readonly class="My_TX">
+<input type="text" id="serverip" style="position:absolute;left:231px;top:167px;width:162px;height:27px;line-height:27px;z-index:2;" name="Editbox1" value="---" readonly class="My_TX">
+<input type="text" id="hostID" style="position:absolute;left:231px;top:89px;width:162px;height:27px;line-height:27px;z-index:3;" name="Editbox1" value="---" readonly class="My_TX">
+<input type="text" id="AP_name" style="position:absolute;left:761px;top:89px;width:162px;height:27px;line-height:27px;z-index:4;" name="Editbox1" value="---" readonly class="My_TX">
+<input type="button" id="Budcxvxtton1" onclick="request_status();return false;" name="" value="بروز رسانی" style="position:absolute;left:82px;top:10px;width:92px;height:25px;z-index:5;">
+<input type="text" id="_SSID" style="position:absolute;left:761px;top:50px;width:162px;height:27px;line-height:27px;z-index:6;" name="Editbox1" value="---" readonly class="My_TX">
+<div id="chart" style="position:absolute;left:322px;top:247px;width:640px;height:180px;z-index:7">
+ <canvas id="mycanvas"  width="680px" height="180px" style="left:450px;top:185px;"></canvas></div>
+<input type="text" id="license" style="position:absolute;left:761px;top:169px;width:162px;height:27px;line-height:27px;z-index:8;" name="Editbox1" value="---" readonly class="My_TX">
+<input type="text" id="software" style="position:absolute;left:761px;top:128px;width:162px;height:27px;line-height:27px;z-index:9;" name="Editbox1" value="---" readonly class="My_TX">
+<div id="wb_Text3" style="position:absolute;left:88px;top:58px;width:130px;height:18px;text-align:right;z-index:10;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">نوع اتصال شبکه</span></div>
+<div id="wb_Text4" style="position:absolute;left:88px;top:97px;width:130px;height:18px;text-align:right;z-index:11;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">نام تجهيز در شبکه</span></div>
+<div id="wb_Text5" style="position:absolute;left:88px;top:136px;width:130px;height:18px;text-align:right;z-index:12;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">&nbsp;&nbsp; تجهيز در شبکه IP </span></div>
+<div id="wb_Text6" style="position:absolute;left:88px;top:175px;width:130px;height:18px;text-align:right;z-index:13;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">&nbsp;&nbsp; سرور شبکه IP </span></div>
+<div id="wb_Text7" style="position:absolute;left:623px;top:58px;width:130px;height:18px;text-align:right;z-index:14;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">&nbsp;&nbsp; سرور شبکه SSID </span></div>
+<div id="wb_Text9" style="position:absolute;left:586px;top:97px;width:167px;height:18px;text-align:right;z-index:15;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">نام اکسس پينت تجهيز </span></div>
+<div id="wb_Text8" style="position:absolute;left:623px;top:136px;width:130px;height:18px;text-align:right;z-index:16;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">ويرايش نرم افزار</span></div>
+<div id="wb_Text10" style="position:absolute;left:623px;top:177px;width:130px;height:18px;text-align:right;z-index:17;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">مالک لايسنس</span></div>
+<div id="wb_Text11" style="position:absolute;left:446px;top:10px;width:130px;height:18px;text-align:right;z-index:18;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;"><strong>وضعيت شبکه</strong></span></div>
+<div id="wb_Text12" style="position:absolute;left:414px;top:211px;width:130px;height:36px;text-align:right;z-index:19;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;"><strong>وضعيت سنسورها</strong></span></div>
+<input type="text" id="Editbox1" style="position:absolute;left:242px;top:247px;width:56px;height:25px;line-height:25px;z-index:20;" name="Editbox1" value="10/24" readonly class="My_TX">
+<input type="text" id="Editbox2" style="position:absolute;left:242px;top:292px;width:56px;height:25px;line-height:25px;z-index:21;" name="Editbox1" value="75" readonly class="My_TX">
+<input type="text" id="Editbox3" style="position:absolute;left:242px;top:337px;width:56px;height:25px;line-height:25px;z-index:22;" name="Editbox1" value="75" readonly class="My_TX">
+<input type="text" id="Editbox4" style="position:absolute;left:242px;top:383px;width:56px;height:25px;line-height:25px;z-index:23;" name="Editbox1" value="27" readonly class="My_TX">
+<div id="wb_Text1" style="position:absolute;left:174px;top:247px;width:45px;height:18px;text-align:right;z-index:24;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">فشار</span></div>
+<div id="wb_Text2" style="position:absolute;left:141px;top:295px;width:78px;height:18px;text-align:right;z-index:25;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">ضربان قلب</span></div>
+<div id="wb_Text13" style="position:absolute;left:174px;top:343px;width:45px;height:18px;text-align:right;z-index:26;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">نبض</span></div>
+<div id="wb_Text14" style="position:absolute;left:174px;top:392px;width:45px;height:18px;text-align:right;z-index:27;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:15px;">دما</span></div>
+<div id="wb_Image1" style="position:absolute;left:19px;top:275px;width:48px;height:44px;z-index:28;">
+<img src="images/heart.png" id="Image1" alt=""></div>
+<div id="wb_Image2" style="position:absolute;left:97px;top:320px;width:62px;height:44px;z-index:29;">
+<img src="images/pulse%20%282%29.png" id="Image2" alt=""></div>
+<div id="wb_Image3" style="position:absolute;left:46px;top:343px;width:21px;height:84px;z-index:30;">
+<img src="images/termo.png" id="Image3" alt=""></div>
+<div id="wb_Image4" style="position:absolute;left:85px;top:226px;width:51px;height:49px;z-index:31;">
+<img src="images/pre.png" id="Image4" alt=""></div>
+</body>
+</html>

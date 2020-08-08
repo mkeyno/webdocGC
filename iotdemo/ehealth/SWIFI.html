@@ -1,0 +1,657 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Keyno Guidance & Control</title>
+<meta name="generator" content=" ">
+<style type="text/css">
+body
+{
+   background-color: #000000;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+a
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+a:visited
+{
+   color: #FF8C00;
+}
+a:active
+{
+   color: #FF0000;
+}
+a:hover
+{
+   color: #FFFFFF;
+   text-decoration: underline;
+}
+#wb_Text21 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text21 div
+{
+   text-align: right;
+}
+#WFM
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 16px;
+}
+#wb_Texnbvmbnt1 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Texnbvmbnt1 div
+{
+   text-align: left;
+}
+#wb_Tenbnxt2 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Tenbnxt2 div
+{
+   text-align: right;
+}
+#SIP
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 16px;
+   text-align: center;
+   vertical-align: middle;
+}
+#SHN
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 16px;
+   text-align: center;
+   vertical-align: middle;
+}
+#Button134
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#Button3hsddf
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#Button4dfgh
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#Breset
+{
+   border: 1px #A9A9A9 solid;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+   background-color: #F0F0F0;
+   color: #800000;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 16px;
+}
+#wb_Textghn3 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Textghn3 div
+{
+   text-align: left;
+}
+#wb_Texkkt4 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Texkkt4 div
+{
+   text-align: left;
+}
+#_username
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 16px;
+   text-align: center;
+   vertical-align: middle;
+}
+#_password
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 16px;
+   text-align: center;
+   vertical-align: middle;
+}
+#wb_Text5aaa 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text5aaa div
+{
+   text-align: left;
+}
+#_userType
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 16px;
+}
+#Butcghton6
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#Buh7
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#Button8
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#_ssid
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 16px;
+   text-align: center;
+   vertical-align: middle;
+}
+#wb_Text7765 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text7765 div
+{
+   text-align: right;
+}
+#wb_Textokhj8 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Textokhj8 div
+{
+   text-align: right;
+}
+#_netpass
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 16px;
+   text-align: center;
+   vertical-align: middle;
+}
+#Bugdfgtton9
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#Button10
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#wb_Text9jhnbvc 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text9jhnbvc div
+{
+   text-align: left;
+}
+#wb_Tezzxt10 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Tezzxt10 div
+{
+   text-align: right;
+}
+#wb_Text11 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text11 div
+{
+   text-align: right;
+}
+#Button11hdf
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#APN
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 16px;
+   text-align: center;
+   vertical-align: middle;
+}
+#APP
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 16px;
+   text-align: center;
+   vertical-align: middle;
+}
+#Bufdtton12
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#wb_Texjdsfgt2 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Texjdsfgt2 div
+{
+   text-align: right;
+}
+#STI
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color :#000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 16px;
+   text-align: center;
+   vertical-align: middle;
+}
+#Bstatic
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#Bmode
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#wb_Text1 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text1 div
+{
+   text-align: right;
+}
+#MOD
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 16px;
+}
+#RESTART
+{
+   border: 1px #A9A9A9 solid;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+   background-color: #F0F0F0;
+   color: #0000FF;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 16px;
+}
+#savesetting
+{
+   border: 1px #A9A9A9 solid;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+   background-color: #F5F5F5;
+   color: #000000;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 16px;
+}
+#Butdsston1
+{
+   border: 1px #A9A9A9 solid;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+   background-color: #F0F0F0;
+   color: #0000FF;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 13px;
+}
+#Button2
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+}
+#wb_Text3 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text3 div
+{
+   text-align: right;
+}
+#wb_Text14 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text14 div
+{
+   text-align: right;
+}
+#wb_Text2 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_Text2 div
+{
+   text-align: right;
+}
+#wb_Text4 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text4 div
+{
+   text-align: left;
+}
+</style>
+</head>
+<body>
+<div id="wb_Text21" style="position:absolute;left:56px;top:46px;width:122px;height:19px;text-align:right;z-index:0;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:16px;">عملکرد واي فاي </span></div>
+<select name="Combobox1" size="1" id="WFM" style="position:absolute;left:190px;top:44px;width:117px;height:26px;z-index:1;" class="My_TX">
+<option value="Access Point">وای فای مستقل</option>
+<option selected value="Station">اتصال به وای فای</option>
+</select>
+<div id="wb_Texnbvmbnt1" style="position:absolute;left:15px;top:164px;width:174px;height:19px;z-index:2;text-align:left;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:16px;">تعيين نام تجهيز در شبکه </span></div>
+<div id="wb_Tenbnxt2" style="position:absolute;left:69px;top:85px;width:109px;height:18px;text-align:right;z-index:3;">
+<span style="color:#FFEBCD;font-family:Arial;font-size:16px;">Set Server IP</span></div>
+<input type="text" id="SIP" onchange="CheckIP(this);return false;" style="position:absolute;left:189px;top:84px;width:114px;height:24px;line-height:24px;z-index:4;" name="Editbox1" value="192.168.---.---." class="My_TX">
+<input type="text" id="SHN" style="position:absolute;left:189px;top:167px;width:114px;height:23px;line-height:23px;z-index:5;" name="Editbox1" value="MyIOT" class="My_TX">
+<input type="button" id="Button134" onclick="Update_Wifi(WFM);return false;" name="" value="Set" style="position:absolute;left:317px;top:44px;width:45px;height:25px;z-index:6;" class="My_BT"><script>
+ function Update_Wifi(_ID)
+ {
+   var command  =_ID.id +'='+_ID.value ;
+   
+   _Connection.send(command);
+}
+</script>
+<input type="button" id="Button3hsddf" onclick="Update_Wifi(SIP);return false;" name="" value="Set" style="position:absolute;left:316px;top:85px;width:45px;height:25px;z-index:7;" class="My_BT">
+<input type="button" id="Button4dfgh" onclick="Update_Wifi(SHN);return false;" name="" value="Set" style="position:absolute;left:316px;top:167px;width:45px;height:25px;z-index:8;"  class="My_BT">
+<input type="button" id="Breset" onclick="Restart();return false;" name="" value="Restart" style="position:absolute;left:474px;top:246px;width:79px;height:25px;z-index:9;" class="My_BT"><script>
+ function Restart()
+{ 
+   var command  = "RRE"; 
+   _Connection.send(command);
+}
+</script>
+<div id="wb_Textghn3" style="position:absolute;left:411px;top:50px;width:106px;height:19px;z-index:10;text-align:left;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:16px;">تعيين نام کابر</span></div>
+<div id="wb_Texkkt4" style="position:absolute;left:409px;top:88px;width:121px;height:19px;z-index:11;text-align:left;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:16px;">تعيين رمز کاربر</span></div>
+<input type="text" id="_username" style="position:absolute;left:511px;top:45px;width:93px;height:21px;line-height:21px;z-index:12;" name="Editbox1" value="" class="My_TX">
+<input type="password" id="_password" style="position:absolute;left:511px;top:86px;width:93px;height:21px;line-height:21px;z-index:13;" name="Editbox1" value="" class="My_TX">
+<div id="wb_Text5aaa" style="position:absolute;left:380px;top:128px;width:124px;height:19px;z-index:14;text-align:left;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:16px;">سطح دسترسي</span></div>
+<select name="Combobox1" size="1" id="_userType" style="position:absolute;left:511px;top:122px;width:95px;height:25px;z-index:15;" class="My_TX">
+<option selected value="Admin">Admin</option>
+<option value="Limit">Limit</option>
+</select>
+<input type="button" id="Butcghton6" onclick="AddUser();return false;" name="" value="اضافه نمودن کاربر" style="position:absolute;left:616px;top:84px;width:105px;height:25px;z-index:16;" class="My_BT">
+<input type="button" id="Buh7" onclick="RemoveUser();return false;" name="" value="حدف کاربر" style="position:absolute;left:616px;top:123px;width:105px;height:25px;z-index:17;" class="My_BT">
+<!-- user list -->
+<div id="userlist" style="position:absolute;left:729px;top:43px;width:124px;height:69px;z-index:18">
+</div>
+<input type="button" id="Button8" onclick="show_user_list();return false;" name="" value="بارگزاری کاربرها" style="position:absolute;left:616px;top:43px;width:105px;height:25px;z-index:19;" class="My_BT">
+<input type="text" id="_ssid" style="position:absolute;left:189px;top:287px;width:114px;height:23px;line-height:23px;z-index:20;" name="Editbox1" value="" class="My_TX">
+<div id="wb_Text7765" style="position:absolute;left:30px;top:287px;width:148px;height:19px;text-align:right;z-index:21;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:16px;">انتخاي واي واي مودم</span></div>
+<div id="wb_Textokhj8" style="position:absolute;left:30px;top:328px;width:148px;height:19px;text-align:right;z-index:22;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:16px;">رمز واي واي مودم</span></div>
+<input type="text" id="_netpass" style="position:absolute;left:189px;top:328px;width:114px;height:23px;line-height:23px;z-index:23;" name="Editbox1" value="" class="My_TX">
+<input type="button" id="Bugdfgtton9" onclick="SetNetwork();return false;" name="" value="Set" style="position:absolute;left:316px;top:288px;width:45px;height:25px;z-index:24;"  class="My_BT">
+<input type="button" id="Button10" onclick="ScanNetwork();return false;" name="" value="جستجوی شبکه وای فای" style="position:absolute;left:538px;top:280px;width:175px;height:26px;z-index:25;" class="My_BT">
+<!-- network scan -->
+<div id="netScanResult" style="position:absolute;left:729px;top:280px;width:106px;height:91px;z-index:26">
+</div>
+<div id="wb_Text9jhnbvc" style="position:absolute;left:347px;top:339px;width:39px;height:18px;z-index:27;text-align:left;">
+<span style="color:#FFFFFF;font-family:Arial;font-size:16px;">Hide</span></div>
+<input type="checkbox" id="_hidecheck" name="_hidecheck" value="on" style="position:absolute;left:317px;top:333px;z-index:28;"  onchange="document.getElementById('_netpass').type = this.checked ? 'password' : 'text'">
+<div id="wb_Tezzxt10" style="position:absolute;left:40px;top:205px;width:138px;height:19px;text-align:right;z-index:29;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:16px;">تعيين نام واي فاي </span></div>
+<div id="wb_Text11" style="position:absolute;left:40px;top:246px;width:138px;height:19px;text-align:right;z-index:30;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:16px;">تعيين رمز واي فاي</span></div>
+<input type="button" id="Button11hdf" onclick="Update_Wifi(APN);return false;" name="" value="Set" style="position:absolute;left:316px;top:208px;width:45px;height:25px;z-index:31;" class="My_BT">
+<input type="text" id="APN" style="position:absolute;left:189px;top:208px;width:114px;height:20px;line-height:20px;z-index:32;" name="Editbox1" value="My Network" class="My_TX">
+<input type="text" id="APP" style="position:absolute;left:189px;top:246px;width:114px;height:23px;line-height:23px;z-index:33;" name="Editbox1" value="****" class="My_TX">
+<input type="button" id="Bufdtton12" onclick="Update_Wifi(APP);return false;" name="" value="Set" style="position:absolute;left:316px;top:249px;width:45px;height:25px;z-index:34;" class="My_BT">
+<div id="wb_Texjdsfgt2" style="position:absolute;left:87px;top:126px;width:91px;height:18px;text-align:right;z-index:35;">
+<span style="color:#FFEBCD;font-family:Arial;font-size:16px;">Set Static IP</span></div>
+<input type="text" id="STI" onchange="CheckIP(this);return false;" style="position:absolute;left:190px;top:126px;width:114px;height:23px;line-height:23px;z-index:36;" name="Editbox1" value="192.168.---.---." class="My_TX">
+<input type="button" id="Bstatic" onclick="Update_Wifi(STI);return false;" name="" value="Set" style="position:absolute;left:317px;top:126px;width:45px;height:25px;z-index:37;" class="My_BT" >
+<input type="button" id="Bmode" onclick="Update_Wifi(MOD);return false;" name="" value="Set" style="position:absolute;left:676px;top:164px;width:45px;height:25px;z-index:38;" class="My_BT">
+<div id="wb_Text1" style="position:absolute;left:407px;top:165px;width:154px;height:19px;text-align:right;z-index:39;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:16px;">تنظيم فعاليت تجهيز</span></div>
+<select name="Combobox1" size="1" id="MOD" style="position:absolute;left:569px;top:165px;width:97px;height:25px;z-index:40;" class="My_TX">
+<option selected value="S">مستقل</option>
+<option value="N">مدیریت شبکه</option>
+</select>
+<input type="checkbox" id="staticCheck" name="_hidecheck" value="on" style="position:absolute;left:56px;top:123px;z-index:41;"  onchange="enable_static_IP(this.checked);return false;">
+<script>
+function enable_static_IP(checked)
+{
+	if(checked) command  = "ESI="+"1";
+	else        command  = "ESI="+"0";
+
+	_Connection.send(command);
+}
+</script>
+<input type="button" id="RESTART" onclick="RestartHTML();return false;" name="" value="Restart" style="position:absolute;left:556px;top:246px;width:76px;height:25px;z-index:42;" class="My_BT"><script>
+ function Restart()
+{ 
+   var command  = "RRE"; 
+   _Connection.send(command);
+}
+</script>
+<input type="button" id="savesetting" onclick=" save_setting();return false;" name="" value="ذخیره تنظیمات" style="position:absolute;left:376px;top:246px;width:96px;height:25px;z-index:43;" class="My_BT"><script>
+ function save_setting()
+{ 
+   var command  = "SVE"; 
+   _Connection.send(command);
+}
+</script>
+<input type="button" id="Butdsston1" onclick="Update_perform();return false;" name="" value="بروز رسانی نرم افزار" style="position:absolute;left:635px;top:246px;width:124px;height:25px;z-index:44;" class="My_BT"><script>
+ function Restart()
+{ 
+   var command  = "RRE"; 
+   _Connection.send(command);
+}
+</script>
+<input type="button" id="Button2" name="" value="دانلود" style="position:absolute;left:676px;top:205px;width:45px;height:25px;z-index:45;" class="My_BT">
+<div id="wb_Text3" style="position:absolute;left:414px;top:205px;width:218px;height:19px;text-align:right;z-index:46;">
+<span style="color:#FFEBCD;font-family:Tahoma;font-size:16px;">دانلود داده هاي عملکردي تجهيز</span></div>
+<div id="wb_Text14" style="position:absolute;left:510px;top:6px;width:211px;height:18px;text-align:right;z-index:47;">
+<span style="color:#FFD700;font-family:Tahoma;font-size:15px;"><strong> تنظيمات عمومي </strong></span></div>
+<div id="wb_Text2" style="position:absolute;left:511px;top:371px;width:211px;height:18px;text-align:right;z-index:48;">
+<span style="color:#FFD700;font-family:Tahoma;font-size:15px;"><strong> تنظيمات پيشرفته </strong></span></div>
+<div id="wb_Text4" style="position:absolute;left:69px;top:397px;width:135px;height:19px;z-index:49;text-align:left;">
+<span style="color:#FFFFFF;font-family:Tahoma;font-size:16px;">&#0063;</span></div>
+</body>
+</html>
